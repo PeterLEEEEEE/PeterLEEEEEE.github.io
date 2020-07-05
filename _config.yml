@@ -4,11 +4,7 @@ name: 'Mundana'
 description: 'Mundana is a free Jekyll theme for awesome people like you, Medium like.'
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-<<<<<<< HEAD
 baseurl: ''
-=======
-baseurl: '/ddanggu.github.io'
->>>>>>> b6f29ddb586de00dd5c56094a842cdd221d18038
 disqus: 'demowebsite'
 email: 'wowthemesnet@gmail.com'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
