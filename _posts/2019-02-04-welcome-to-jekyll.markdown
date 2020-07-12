@@ -1,24 +1,23 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-categories: [ Jekyll ]
+title:  "자료구조 복습을 위한 테스트"
+categories: [ DataStructure ]
 image: assets/images/demo1.jpg
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+자료구조를 공부하던 중, 종강을 하면 모든 것을 망각하는 자신을 위해 조금이라도 기억을 붙잡고자 만들게 되었다.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+이 글은 시작에 앞서 내강 md 파일을 잘 쓰고 있는 지 확인 차 올린다. 
 
-Jekyll also offers powerful support for code snippets:
+'내일 시험 화이팅'
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+```
+printf("Hello DataStructure");
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+```
+
+#### => prints 'Hello DataStructure'.
+
+
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll

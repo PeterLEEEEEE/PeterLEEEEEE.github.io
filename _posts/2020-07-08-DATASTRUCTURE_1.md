@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "자료구조"
+author: peter
+categories: [ DataStructure ]
+image: assets/images/home.jpg
+tags: [sticky]
+---
+
+---
+자료구조를 물리적 메모리에 어덯게 저장할 것인가? 를 바탕으로 용도에 맞게 효율적으로 구조 설계를 하는 것이 <u>자료구조</u> 이다.
+
+---
+### 자료구조의 분류
+
+- 단순 구조 
+    - 프로그래밍 언어에서 제공하는 기본적인 데이터 타입
+        - int, float, double, char, string etc.
+
+- 선형 구조
+    - 자료들 사이의 앞뒤 관계가 1:1인 구조
+        - List, Stack, Queue, Deque etc.  
+
+- 비선형 구조
+    - 자료들 사이의 앞뒤 관계가 1:N, M:N인 계층/망 구조
+        - Tree, Graph etc.
+     
+---
+### 선형 리스트 vs 비선형 리스트 
+- 선형 리스트(배열 기반)의 장단점
+    - 배열의 길이가 초기에 결정(변경 불가)
+    - 삽입/삭제가 어렵다
+    - 데이터 참조가 쉽고, 인덱스 값 기준으로 어디든 한 번에 참조 가능하다.
+---
+
+
+
