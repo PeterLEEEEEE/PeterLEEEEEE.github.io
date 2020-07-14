@@ -7,7 +7,7 @@ description: 'Peter's Blog'
 #baseurl: ''
 disqus: 'demowebsite'
 email: 'dissgogo@naver.com'
-mailchimp-list: ''
+
 
 include: ["_pages"]
 permalink: /:title/
