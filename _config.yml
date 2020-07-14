@@ -21,8 +21,8 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-      name: "Peter"
-      site:           
+      name: Peter
+      site: https://peterleeeeee.github.io/         
       avatar:         
       bio: "newbie on Computer"
       email: dissgogo@naver.com
