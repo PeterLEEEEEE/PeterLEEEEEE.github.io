@@ -21,7 +21,7 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-      name:           Peter
+      name:           'Peter'
       site:           
       avatar:         
       bio:            ""
