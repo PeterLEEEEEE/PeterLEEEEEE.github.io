@@ -21,11 +21,11 @@ plugins:
   - jekyll-seo-tag
   
 authors:
-      name:           'Peter'
+      name: "Peter"
       site:           
       avatar:         
-      bio:            ""
-      email:          dissgogo@naver.com
+      bio: "newbie on Computer"
+      email: dissgogo@naver.com
       
 
     
