@@ -5,6 +5,9 @@ author: sal
 categories: [ DataStructure ]
 image: assets/images/14.jpg
 tags: 
+sitemap:
+changefreq: daily
+priority: 1.0
 ---
 
 ---
