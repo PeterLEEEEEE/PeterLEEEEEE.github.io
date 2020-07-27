@@ -1,0 +1,225 @@
+I"�B<hr />
+
+<h3 id="스택의-개념">스택의 개념</h3>
+<ul>
+  <li>
+    <p>한 쪽이 막힌 바구니의 형태다.</p>
+  </li>
+  <li>
+    <p>넣은 데이터는 아래쪽에 쌓인다.</p>
+  </li>
+  <li>
+    <p>후입선출(LIFO:Last in first out): 가장 최근에 들어온 데이터가 가장 먼저 나간다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="스택과-큐">스택과 큐</h3>
+<ul>
+  <li>배열/리스트 vs 스택/큐
+    <ul>
+      <li>공통점: <u>선형 구조</u> 이다.</li>
+      <li>차이점: 삽입과 삭제의 위치 고정 여부
+        <ul>
+          <li>배열/리스트: 임의의 위치에서 삽입/삭제</li>
+          <li>스택: 맨 위(top)</li>
+          <li>큐:
+            <ul>
+              <li>삽입: 맨 앞(front)</li>
+              <li>삭제: 맨 뒤(rear)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="스택의-구현">스택의 구현</h3>
+<ul>
+  <li>배열을 이용한 구현</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">typedef</span> <span class="k">struct</span> <span class="nc">Stack</span><span class="p">{</span>
+    <span class="kt">int</span> <span class="n">top</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="n">STACK</span><span class="p">];</span>
+<span class="p">}</span><span class="n">ArrayStack</span><span class="p">;</span> </code></pre></figure>
+
+<ul>
+  <li>연결 자료구조(연결 리스트)를 이용한 구현</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">typedef</span> <span class="k">struct</span> <span class="nc">StackNode</span><span class="p">{</span>
+    <span class="kt">int</span> <span class="n">data</span><span class="p">;</span> <span class="c1">// 넣어줄 데이터 </span>
+    <span class="k">struct</span> <span class="nc">Node</span><span class="o">*</span> <span class="n">next</span><span class="p">;</span> <span class="c1">// 연결을 위한 자기참조 포인터 </span>
+<span class="p">}</span><span class="n">Node</span><span class="p">;</span> 
+
+<span class="k">typedef</span> <span class="k">struct</span> <span class="nc">LinkedStack</span><span class="p">{</span>
+    <span class="n">Node</span><span class="o">*</span> <span class="n">top</span><span class="p">;</span> <span class="c1">// top 표시</span>
+<span class="p">}</span><span class="n">Node</span><span class="p">;</span> </code></pre></figure>
+
+<hr />
+
+<hr />
+
+<h4 id="배열-스택의-구현cpp">배열 스택의 구현.cpp</h4>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#define	MAX_STACK_SIZE 50
+#define True 1
+#define False 0
+</span>
+<span class="k">typedef</span>  <span class="kt">int</span>  <span class="n">Bool</span><span class="p">;</span>
+<span class="k">typedef</span>  <span class="kt">int</span>  <span class="n">Element</span><span class="p">;</span>
+
+<span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span> 
+   <span class="n">Element</span>  <span class="n">stackArr</span><span class="p">[</span><span class="n">MAX_STACK_SIZE</span><span class="p">];</span>
+   <span class="kt">int</span>	<span class="n">top</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">Stack</span><span class="p">;</span>
+
+<span class="c1">// 스택 생성</span>
+<span class="n">Stack</span> <span class="o">*</span><span class="nf">Create</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+   <span class="n">Stack</span> <span class="o">*</span><span class="n">tempstack</span><span class="p">;</span>
+	
+   <span class="n">tempstack</span> <span class="o">=</span> <span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="n">Stack</span><span class="p">));</span>
+   <span class="n">tempstack</span><span class="o">-&gt;</span><span class="n">top</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="c1">// 맨 아래에 있음</span>
+   <span class="k">return</span> <span class="n">tempstack</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 스택이 비었는 지 확인</span>
+<span class="n">Bool</span>  <span class="nf">isEmpty</span><span class="p">(</span><span class="n">Stack</span> <span class="o">*</span><span class="n">pstack</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+      <span class="k">return</span> <span class="n">True</span><span class="p">;</span>
+   <span class="k">else</span> <span class="k">return</span> <span class="n">False</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 스택이 포화 상태인가</span>
+<span class="n">Bool</span> <span class="nf">isFull</span><span class="p">(</span><span class="n">Stack</span> <span class="o">*</span><span class="n">pstack</span><span class="p">)</span>
+<span class="p">{</span>
+   <span class="k">if</span> <span class="p">(</span><span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span> <span class="o">==</span> <span class="n">MAX_STACK_SIZE</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="c1">// top은 -1부터 시작하기 때문에</span>
+      <span class="k">return</span> <span class="n">True</span><span class="p">;</span>
+   <span class="k">else</span>
+      <span class="k">return</span> <span class="n">False</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 스택에 삽입 </span>
+<span class="kt">void</span>  <span class="nf">Push</span><span class="p">(</span><span class="n">Stack</span> <span class="o">*</span><span class="n">pstack</span><span class="p">,</span> <span class="n">Element</span> <span class="n">Data</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">isFull</span><span class="p">(</span><span class="n">pstack</span><span class="p">)){</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Stack Overflow. </span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">pstack</span><span class="o">-&gt;</span><span class="n">stackArr</span><span class="p">[</span><span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span><span class="p">]</span> <span class="o">=</span> <span class="n">Data</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">//스택에서 삭제</span>
+<span class="n">Element</span>  <span class="nf">Pop</span><span class="p">(</span><span class="n">Stack</span> <span class="o">*</span><span class="n">pstack</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">isEmpty</span><span class="p">(</span><span class="n">pstack</span><span class="p">)){</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">"Stack underflow. </span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+    <span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+   <span class="k">return</span> <span class="n">pstack</span><span class="o">-&gt;</span><span class="n">stackArr</span><span class="p">[</span><span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span><span class="o">--</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="c1">// 마지막에 무엇이 있는지 확인</span>
+<span class="n">Element</span> <span class="nf">peek</span><span class="p">(){</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">isEmpty</span><span class="p">(</span><span class="n">pstack</span><span class="p">)){</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"ERROR"</span><span class="p">);</span>
+        <span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">pstack</span><span class="o">-&gt;</span><span class="n">stackArr</span><span class="p">[</span><span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span> <span class="p">)</span> <span class="p">{</span>
+   <span class="n">Stack</span> <span class="o">*</span><span class="n">pstack</span><span class="p">;</span>
+   <span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+	
+   <span class="n">pstack</span> <span class="o">=</span> <span class="n">Create</span><span class="p">();</span>
+   <span class="n">Push</span><span class="p">(</span><span class="n">pstack</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+   <span class="n">a</span> <span class="o">=</span> <span class="n">Pop</span><span class="p">(</span><span class="n">pstack</span><span class="p">);</span>
+   <span class="n">printf</span><span class="p">(</span><span class="s">"%d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">a</span><span class="p">);</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<ul>
+  <li>배열로 구현한 스택의 장단점
+    <ul>
+      <li>장점: 쉽게 구현 가능하다</li>
+      <li>단점:
+        <ul>
+          <li>스택의 크기 변경이 어렵다</li>
+          <li>순차 자료구조의 단점을 가진다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="연결리스트-스택의-구현cpp">연결리스트 스택의 구현.cpp</h4>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+#include&lt;string.h&gt;
+</span>
+<span class="k">typedef</span> <span class="kt">int</span> <span class="n">element</span><span class="p">;</span>
+
+<span class="k">typedef</span> <span class="k">struct</span> <span class="nc">stackNode</span><span class="p">{</span>
+    <span class="n">element</span> <span class="n">data</span><span class="p">;</span>
+    <span class="k">struct</span> <span class="nc">stackNodeType</span><span class="o">*</span> <span class="n">link</span><span class="p">;</span> 
+<span class="p">}</span><span class="n">stackNode</span><span class="p">;</span>
+
+<span class="k">typedef</span> <span class="k">struct</span> <span class="nc">LinkedStackType</span><span class="p">{</span> 
+    <span class="n">stackNode</span><span class="o">*</span> <span class="n">top</span><span class="p">;</span>
+<span class="p">}</span><span class="n">LinkedStack</span><span class="p">;</span>
+
+<span class="n">type</span> <span class="n">LinkedStack</span> <span class="n">Stack</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">StackInit</span><span class="p">(</span><span class="n">Stack</span><span class="o">*</span> <span class="n">pstack</span><span class="p">){</span>
+    <span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">element</span> <span class="nf">isEmpty</span><span class="p">(</span><span class="n">Stack</span><span class="o">*</span> <span class="n">pstack</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span> <span class="o">==</span> <span class="nb">NULL</span><span class="p">)</span>
+        <span class="k">return</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="n">Stack</span><span class="o">*</span> <span class="n">pstack</span><span class="p">,</span> <span class="n">element</span> <span class="n">item</span><span class="p">){</span>
+    <span class="n">stackNode</span><span class="o">*</span> <span class="n">newNode</span> <span class="o">=</span> <span class="p">(</span><span class="n">stackNode</span><span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="n">stackNode</span><span class="p">));</span>
+    <span class="n">newNode</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">;</span>
+    <span class="n">newNode</span><span class="o">-&gt;</span><span class="n">link</span> <span class="o">=</span> <span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span><span class="p">;</span>
+    <span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span> <span class="o">=</span> <span class="n">newNode</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">element</span> <span class="nf">pop</span><span class="p">(</span><span class="n">Stack</span><span class="o">*</span> <span class="n">pstack</span><span class="p">){</span>
+    <span class="n">element</span> <span class="n">rdata</span><span class="p">;</span>
+    <span class="n">stackNode</span><span class="o">*</span> <span class="n">rnode</span><span class="p">;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">isEmpty</span><span class="p">(</span><span class="n">pstack</span><span class="p">)){</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n\n</span><span class="s"> Stack is empty!</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="n">rdata</span> <span class="o">=</span> <span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
+        <span class="n">rnode</span> <span class="o">=</span> <span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span><span class="p">;</span>
+        <span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span> <span class="o">=</span> <span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span><span class="o">-&gt;</span><span class="n">link</span><span class="p">;</span>
+        <span class="n">free</span><span class="p">(</span><span class="n">rnode</span><span class="p">);</span>
+        <span class="k">return</span> <span class="n">rdata</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">elememt</span> <span class="nf">peek</span><span class="p">(</span><span class="n">Stack</span><span class="o">*</span> <span class="n">pstack</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">isEmpty</span><span class="p">(</span><span class="n">pstack</span><span class="p">)){</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n\n</span><span class="s"> Stack is empty! </span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+        <span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">pstack</span><span class="o">-&gt;</span><span class="n">top</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+:ET

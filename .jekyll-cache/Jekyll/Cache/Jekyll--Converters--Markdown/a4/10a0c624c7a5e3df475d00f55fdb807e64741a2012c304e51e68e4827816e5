@@ -1,0 +1,253 @@
+I"�<hr />
+<h3 id="트리tree">트리(tree)</h3>
+
+<p>앞서 다뤘던 리스트, 스택, 큐 등은 <strong>선형 자료구조</strong>(1:1)이다.</p>
+
+<p>이에 반해 <strong>트리</strong>는 계층적인 구조를 나타내는 <strong>비선형 자료구조</strong>이다.</p>
+
+<p>정리하면 트리는</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>- 원소들 간에 1:N 관계를 가지는 비선형 자료구조
+- 원소들 간에 계층 관계를 가지는 구조(부모-자식 구조)이다.
+</code></pre></div></div>
+
+<hr />
+
+<h5 id="트리-용어">트리 용어</h5>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>- 루트(root) 노드: 트리의 첫 번째 노드(2번 노드에 해당)
+- 단말(leap or terminal) 노드: 자식이 없는 노드(5, 11, 4번 노드가 해당)
+- 내부(internal) 노드: 적어도 하나의 자식을 가지는 노드(단말 노드가 아닌 노드)
+- 트리의 높이(height): 루트 노드에서 가장 먼 거리에 있는 자식 노드에 이르는 간선들의 수
+- 차수(degree): 한 노드가 가지는 자식 노드의 개수
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/88499076-d5df1b00-cfff-11ea-820d-f2930155a4a8.png" alt="300px-Binary_tree svg" /></p>
+
+<hr />
+
+<h4 id="이진-트리binary-tree">이진 트리(binary tree)</h4>
+<ul>
+  <li>
+    <p>트리의 모든 노드의 차수를 2 이하로 제한하는 트리 형식</p>
+  </li>
+  <li>이진 트리의 모든 노드는 왼쪽 자식 노드와 오른쪽 자식 노드만을 가짐
+    <ul>
+      <li>0 &lt;= 노드의 차수 &lt;= 2</li>
+    </ul>
+  </li>
+  <li>
+    <p>노드의 개수가 n개 이면 간선의 개수는 n-1개이다.</p>
+  </li>
+  <li>높이가 h인 이진 트리의 경우
+    <ul>
+      <li>최소 h개의 노드 ~ 최대 \(2^h - 1\) 개의 노드</li>
+    </ul>
+  </li>
+  <li>n개의 노드를 가지는 이진 트리의 높이
+    <ul>
+      <li>최소 \(log2(n+1)\) ~ 최대 n</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h5 id="이진-트리의-분류">이진 트리의 분류</h5>
+<ol>
+  <li>포화 이진 트리(full binary tree): 단말 노드를 제외한 모든 노드가 2개의 자식 노드을 가짐</li>
+  <li>완전 이진 트리(complete binary tree): 왼쪽부터 순서대로 채워진 트리</li>
+  <li>편향 이진 트리: 노드가 왼쪽 또는 오른쪽 한 방향으로만 서브 트리를 가진 트리</li>
+  <li>기타 이진 트리</li>
+</ol>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/88501438-6c163f80-d006-11ea-9e0a-c14275219b52.PNG" alt="이진트리2" /></p>
+
+<h5 id="연결리스트를-이용한-이진-트리-구현c">연결리스트를 이용한 이진 트리 구현.c</h5>
+<p>{% highlight cpp %}
+typedef struct Node {
+	char data;
+	struct Node* left;
+	struct Node* right;
+}Node;
+{% endhighlight %}</p>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/88502963-20b26000-d00b-11ea-8886-e95ab01c2190.PNG" alt="포인터 이진트리" />
+<img src="https://user-images.githubusercontent.com/52132160/88503036-666f2880-d00b-11ea-83a6-6ca2bccb21bb.PNG" alt="포인터 이진트리2" /></p>
+
+<p>####</p>
+
+<h5 id="반복문을-이용한-트리-순회c">반복문을 이용한 트리 순회.c</h5>
+
+<p>{% highlight cpp %}
+#include<stdio.h>
+#include<stdlib.h>
+#define MAX 15</stdlib.h></stdio.h></p>
+
+<p>int top = -1;
+int front = 0;
+int rear = 0;</p>
+
+<p>typedef struct treeNode {
+	char data;
+	struct treeNode *left;
+	struct treeNode *right;
+} treeNode;</p>
+
+<p>treeNode* stack[MAX]; 
+treeNode* queue[MAX]; // 레벨 순회를 위한 큐</p>
+
+<p>treeNode* makeRootNode(char data, treeNode* leftNode, treeNode* rightNode) {
+	treeNode* root = (treeNode *)malloc(sizeof(treeNode));
+	root-&gt;data = data;
+	root-&gt;left = leftNode;
+	root-&gt;right = rightNode;
+	return root;
+}</p>
+
+<p>void push(treeNode* node, int* top) {
+	if (*top == MAX - 1) {
+		printf(“Stack Overflow”);
+		exit(-1);
+	}</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>stack[++(*top)] = node; }
+</code></pre></div></div>
+
+<p>treeNode* pop(int* top) {
+	if (<em>top == -1) {
+		exit(1);
+	}
+	return stack[(</em>top)–];
+}</p>
+
+<p>void insert(int front, int* rear, treeNode* Tnode) {
+	<em>rear = (</em>rear + 1) % MAX;
+	if (<em>rear == front) {
+		printf(“Queue is Full”);
+		exit(1);
+	}
+	queue[</em>rear] = Tnode;
+}</p>
+
+<p>treeNode* Delete(int* front, int rear) {
+	if (<em>front == rear) {
+		exit(1);
+	}
+	*front = (</em>front + 1) % MAX;
+	return queue[*front];
+}</p>
+
+<p>//전위
+void preorder(treeNode* Tnode) {
+	treeNode* temp = Tnode;</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>push(temp, <span class="ni">&amp;top);</span>
+while (top != -1) {
+	temp = pop(<span class="ni">&amp;top);</span>
+	printf("%c ", temp-&gt;data);
+	
+	if (temp-&gt;right != NULL) {
+		push(temp-&gt;right, <span class="ni">&amp;top);</span>
+	}
+	if (temp-&gt;left != NULL) {
+		push(temp-&gt;left, <span class="ni">&amp;top);</span>
+	}
+}
+printf("\n"); }
+</code></pre></div></div>
+
+<p>//중위
+void inorder(treeNode* Tnode) {
+	treeNode* temp= Tnode;
+	while (1) {
+		for (; temp; temp = temp-&gt;left) {
+			push(temp, &amp;top);
+		}
+		if (top != -1) {
+			temp = pop(&amp;top);
+		}
+		if (!temp) break;</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>	printf("%c ", temp-&gt;data);
+	temp = temp-&gt;right;
+
+}
+printf("\n"); }
+</code></pre></div></div>
+
+<p>//후위
+void postorder(treeNode* Tnode) {
+	treeNode* temp = Tnode;
+	treeNode* check = NULL;
+	while (1) {
+		if (temp != NULL &amp;&amp; temp != check) {
+			push(temp, &amp;top);
+			do {
+				if (temp-&gt;right != NULL) push(temp-&gt;right, &amp;top);
+				if (temp-&gt;left != NULL) push(temp-&gt;left, &amp;top);
+				temp = temp-&gt;left;
+			} while (temp != NULL);
+		}
+		if (top != -1) {
+			temp = pop(&amp;top);
+			if (temp-&gt;left != NULL &amp;&amp; temp-&gt;right == NULL &amp;&amp; temp-&gt;left != check) {
+				push(temp, &amp;top);
+				temp = temp-&gt;left;
+			}
+			if (temp-&gt;right == NULL || temp-&gt;right == check) {
+				printf(“%c “, temp-&gt;data);
+				check = temp;
+			}
+		}
+		else break;
+	}
+	printf(“\n”);
+}</p>
+
+<p>//레벨
+void level(treeNode* Tnode) {
+	treeNode* temp = Tnode;</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>if (!temp) return;
+insert(front, <span class="err">&amp;</span>rear, temp);
+while (1) {
+	temp = Delete(<span class="err">&amp;</span>front, rear);
+	if (temp) {
+		printf("%c ", temp-&gt;data);
+		if (temp-&gt;left) {
+			insert(front, <span class="err">&amp;</span>rear, temp-&gt;left);
+		}
+		if (temp-&gt;right) {
+			insert(front, <span class="err">&amp;</span>rear, temp-&gt;right);
+		}
+	}
+	else break;
+}
+printf("\n"); }
+</code></pre></div></div>
+
+<p>int main() {
+	treeNode* n13 = makeRootNode(‘!’, NULL, NULL);
+	treeNode* n11 = makeRootNode(‘D’, NULL, NULL);
+	treeNode* n10 = makeRootNode(‘L’, NULL, NULL);
+	treeNode* n8 = makeRootNode(‘R’, NULL, NULL);
+	treeNode* n7 = makeRootNode(‘O’, NULL, NULL);
+	treeNode* n6 = makeRootNode(‘W’, NULL, n13);
+	treeNode* n5 = makeRootNode(‘O’, n10, n11);
+	treeNode* n4 = makeRootNode(‘L’, n8, NULL);
+	treeNode* n3 = makeRootNode(‘L’, n6, n7);
+	treeNode* n2 = makeRootNode(‘E’, n4, n5);
+	treeNode* n1 = makeRootNode(‘H’, n2, n3);</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>printf("전위순회: ");
+preorder(n1);
+printf("중위순회: ");
+inorder(n1);
+printf("후위순회: ");
+postorder(n1);
+printf("레벨순회: ");
+level(n1);
+
+return 0; } {% endhighlight %}
+</code></pre></div></div>
+:ET

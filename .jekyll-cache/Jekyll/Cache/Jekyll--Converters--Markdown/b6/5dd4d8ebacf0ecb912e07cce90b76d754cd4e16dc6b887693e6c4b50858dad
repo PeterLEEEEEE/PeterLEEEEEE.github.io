@@ -1,0 +1,265 @@
+I"�q<hr />
+<h3 id="트리tree">트리(tree)</h3>
+
+<p>앞서 다뤘던 리스트, 스택, 큐 등은 <strong>선형 자료구조</strong>(1:1)이다.</p>
+
+<p>이에 반해 <strong>트리</strong>는 계층적인 구조를 나타내는 <strong>비선형 자료구조</strong>이다.</p>
+
+<p>정리하면 트리는</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>- 원소들 간에 1:N 관계를 가지는 비선형 자료구조
+- 원소들 간에 계층 관계를 가지는 구조(부모-자식 구조)이다.
+</code></pre></div></div>
+
+<hr />
+
+<h5 id="트리-용어">트리 용어</h5>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>- 루트(root) 노드: 트리의 첫 번째 노드(2번 노드에 해당)
+- 단말(leap or terminal) 노드: 자식이 없는 노드(5, 11, 4번 노드가 해당)
+- 내부(internal) 노드: 적어도 하나의 자식을 가지는 노드(단말 노드가 아닌 노드)
+- 트리의 높이(height): 루트 노드에서 가장 먼 거리에 있는 자식 노드에 이르는 간선들의 수
+- 차수(degree): 한 노드가 가지는 자식 노드의 개수
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/88499076-d5df1b00-cfff-11ea-820d-f2930155a4a8.png" alt="300px-Binary_tree svg" /></p>
+
+<hr />
+
+<h4 id="이진-트리binary-tree">이진 트리(binary tree)</h4>
+<ul>
+  <li>
+    <p>트리의 모든 노드의 차수를 2 이하로 제한하는 트리 형식</p>
+  </li>
+  <li>이진 트리의 모든 노드는 왼쪽 자식 노드와 오른쪽 자식 노드만을 가짐
+    <ul>
+      <li>0 &lt;= 노드의 차수 &lt;= 2</li>
+    </ul>
+  </li>
+  <li>
+    <p>노드의 개수가 n개 이면 간선의 개수는 n-1개이다.</p>
+  </li>
+  <li>높이가 h인 이진 트리의 경우
+    <ul>
+      <li>최소 h개의 노드 ~ 최대 \(2^h - 1\) 개의 노드</li>
+    </ul>
+  </li>
+  <li>n개의 노드를 가지는 이진 트리의 높이
+    <ul>
+      <li>최소 \(log2(n+1)\) ~ 최대 n</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h5 id="이진-트리의-분류">이진 트리의 분류</h5>
+<ol>
+  <li>포화 이진 트리(full binary tree): 단말 노드를 제외한 모든 노드가 2개의 자식 노드을 가짐</li>
+  <li>완전 이진 트리(complete binary tree): 왼쪽부터 순서대로 채워진 트리</li>
+  <li>편향 이진 트리: 노드가 왼쪽 또는 오른쪽 한 방향으로만 서브 트리를 가진 트리</li>
+  <li>기타 이진 트리</li>
+</ol>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/88501438-6c163f80-d006-11ea-9e0a-c14275219b52.PNG" alt="이진트리2" /></p>
+
+<h5 id="연결리스트를-이용한-이진-트리-구현c">연결리스트를 이용한 이진 트리 구현.c</h5>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="k">typedef</span> <span class="k">struct</span> <span class="nc">Node</span> <span class="p">{</span>
+	<span class="kt">char</span> <span class="n">data</span><span class="p">;</span>
+	<span class="k">struct</span> <span class="nc">Node</span><span class="o">*</span> <span class="n">left</span><span class="p">;</span>
+	<span class="k">struct</span> <span class="nc">Node</span><span class="o">*</span> <span class="n">right</span><span class="p">;</span>
+<span class="p">}</span><span class="n">Node</span><span class="p">;</span></code></pre></figure>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>- 자식 노드가 없으면 NULL 포인터로 설정 
+- 데이터 필드, 왼쪽 링크 필드(왼쪽 노드 포인터), 오른쪽 링크 필드(오른쪽 노드 포인터)를 구성
+</code></pre></div></div>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/88502963-20b26000-d00b-11ea-8886-e95ab01c2190.PNG" alt="포인터 이진트리" />
+<img src="https://user-images.githubusercontent.com/52132160/88503036-666f2880-d00b-11ea-83a6-6ca2bccb21bb.PNG" alt="포인터 이진트리2" /></p>
+
+<h4 id="이진트리의-순회">이진트리의 순회</h4>
+<p>순회란? 모든 노드를 빠트리거나 중복하지 않고 처리하는 연산 
+–&gt; 다양한 순회 방법이 존재한다(전위, 중위, 후위, 레벨 순회)</p>
+<ol>
+  <li>전위 순회(preorder traverse):</li>
+</ol>
+
+<h5 id="반복문을-이용한-트리-순회c">반복문을 이용한 트리 순회.c</h5>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;
+#define MAX 15
+</span>
+
+<span class="kt">int</span> <span class="n">top</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">front</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">rear</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+<span class="k">typedef</span> <span class="k">struct</span> <span class="nc">treeNode</span> <span class="p">{</span>
+	<span class="kt">char</span> <span class="n">data</span><span class="p">;</span>
+	<span class="k">struct</span> <span class="nc">treeNode</span> <span class="o">*</span><span class="n">left</span><span class="p">;</span>
+	<span class="k">struct</span> <span class="nc">treeNode</span> <span class="o">*</span><span class="n">right</span><span class="p">;</span>
+<span class="p">}</span> <span class="n">treeNode</span><span class="p">;</span>
+
+<span class="n">treeNode</span><span class="o">*</span> <span class="n">stack</span><span class="p">[</span><span class="n">MAX</span><span class="p">];</span> 
+<span class="n">treeNode</span><span class="o">*</span> <span class="n">queue</span><span class="p">[</span><span class="n">MAX</span><span class="p">];</span> <span class="c1">// 레벨 순회를 위한 큐</span>
+
+
+
+<span class="n">treeNode</span><span class="o">*</span> <span class="nf">makeRootNode</span><span class="p">(</span><span class="kt">char</span> <span class="n">data</span><span class="p">,</span> <span class="n">treeNode</span><span class="o">*</span> <span class="n">leftNode</span><span class="p">,</span> <span class="n">treeNode</span><span class="o">*</span> <span class="n">rightNode</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">root</span> <span class="o">=</span> <span class="p">(</span><span class="n">treeNode</span> <span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="n">treeNode</span><span class="p">));</span>
+	<span class="n">root</span><span class="o">-&gt;</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">;</span>
+	<span class="n">root</span><span class="o">-&gt;</span><span class="n">left</span> <span class="o">=</span> <span class="n">leftNode</span><span class="p">;</span>
+	<span class="n">root</span><span class="o">-&gt;</span><span class="n">right</span> <span class="o">=</span> <span class="n">rightNode</span><span class="p">;</span>
+	<span class="k">return</span> <span class="n">root</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">push</span><span class="p">(</span><span class="n">treeNode</span><span class="o">*</span> <span class="n">node</span><span class="p">,</span> <span class="kt">int</span><span class="o">*</span> <span class="n">top</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">top</span> <span class="o">==</span> <span class="n">MAX</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"Stack Overflow"</span><span class="p">);</span>
+		<span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
+	<span class="p">}</span>
+
+	<span class="n">stack</span><span class="p">[</span><span class="o">++</span><span class="p">(</span><span class="o">*</span><span class="n">top</span><span class="p">)]</span> <span class="o">=</span> <span class="n">node</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">treeNode</span><span class="o">*</span> <span class="nf">pop</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">top</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">top</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="n">stack</span><span class="p">[(</span><span class="o">*</span><span class="n">top</span><span class="p">)</span><span class="o">--</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">insert</span><span class="p">(</span><span class="kt">int</span> <span class="n">front</span><span class="p">,</span> <span class="kt">int</span><span class="o">*</span> <span class="n">rear</span><span class="p">,</span> <span class="n">treeNode</span><span class="o">*</span> <span class="n">Tnode</span><span class="p">)</span> <span class="p">{</span>
+	<span class="o">*</span><span class="n">rear</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">rear</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">MAX</span><span class="p">;</span>
+	<span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">rear</span> <span class="o">==</span> <span class="n">front</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"Queue is Full"</span><span class="p">);</span>
+		<span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+	<span class="p">}</span>
+	<span class="n">queue</span><span class="p">[</span><span class="o">*</span><span class="n">rear</span><span class="p">]</span> <span class="o">=</span> <span class="n">Tnode</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">treeNode</span><span class="o">*</span> <span class="nf">Delete</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">front</span><span class="p">,</span> <span class="kt">int</span> <span class="n">rear</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="o">*</span><span class="n">front</span> <span class="o">==</span> <span class="n">rear</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+	<span class="p">}</span>
+	<span class="o">*</span><span class="n">front</span> <span class="o">=</span> <span class="p">(</span><span class="o">*</span><span class="n">front</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="n">MAX</span><span class="p">;</span>
+	<span class="k">return</span> <span class="n">queue</span><span class="p">[</span><span class="o">*</span><span class="n">front</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="c1">//전위</span>
+<span class="kt">void</span> <span class="nf">preorder</span><span class="p">(</span><span class="n">treeNode</span><span class="o">*</span> <span class="n">Tnode</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">Tnode</span><span class="p">;</span>
+	
+	<span class="n">push</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+	<span class="k">while</span> <span class="p">(</span><span class="n">top</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">temp</span> <span class="o">=</span> <span class="n">pop</span><span class="p">(</span><span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+		<span class="n">printf</span><span class="p">(</span><span class="s">"%c "</span><span class="p">,</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">);</span>
+		
+		<span class="k">if</span> <span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">right</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+			<span class="n">push</span><span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+		<span class="p">}</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">left</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="p">{</span>
+			<span class="n">push</span><span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">//중위</span>
+<span class="kt">void</span> <span class="nf">inorder</span><span class="p">(</span><span class="n">treeNode</span><span class="o">*</span> <span class="n">Tnode</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">temp</span><span class="o">=</span> <span class="n">Tnode</span><span class="p">;</span>
+	<span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">for</span> <span class="p">(;</span> <span class="n">temp</span><span class="p">;</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">)</span> <span class="p">{</span>
+			<span class="n">push</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+		<span class="p">}</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">top</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+			<span class="n">temp</span> <span class="o">=</span> <span class="n">pop</span><span class="p">(</span><span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+		<span class="p">}</span>
+		<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">temp</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+			
+		<span class="n">printf</span><span class="p">(</span><span class="s">"%c "</span><span class="p">,</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">);</span>
+		<span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">;</span>
+
+	<span class="p">}</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">//후위</span>
+<span class="kt">void</span> <span class="nf">postorder</span><span class="p">(</span><span class="n">treeNode</span><span class="o">*</span> <span class="n">Tnode</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">Tnode</span><span class="p">;</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">check</span> <span class="o">=</span> <span class="nb">NULL</span><span class="p">;</span>
+	<span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">!=</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="n">temp</span> <span class="o">!=</span> <span class="n">check</span><span class="p">)</span> <span class="p">{</span>
+			<span class="n">push</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+			<span class="k">do</span> <span class="p">{</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">right</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="n">push</span><span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">left</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">)</span> <span class="n">push</span><span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+				<span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">;</span>
+			<span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">temp</span> <span class="o">!=</span> <span class="nb">NULL</span><span class="p">);</span>
+		<span class="p">}</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">top</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+			<span class="n">temp</span> <span class="o">=</span> <span class="n">pop</span><span class="p">(</span><span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">left</span> <span class="o">!=</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">right</span> <span class="o">==</span> <span class="nb">NULL</span> <span class="o">&amp;&amp;</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">left</span> <span class="o">!=</span> <span class="n">check</span><span class="p">)</span> <span class="p">{</span>
+				<span class="n">push</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">top</span><span class="p">);</span>
+				<span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">;</span>
+			<span class="p">}</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">right</span> <span class="o">==</span> <span class="nb">NULL</span> <span class="o">||</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">right</span> <span class="o">==</span> <span class="n">check</span><span class="p">)</span> <span class="p">{</span>
+				<span class="n">printf</span><span class="p">(</span><span class="s">"%c "</span><span class="p">,</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">);</span>
+				<span class="n">check</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		<span class="k">else</span> <span class="k">break</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">//레벨</span>
+<span class="kt">void</span> <span class="nf">level</span><span class="p">(</span><span class="n">treeNode</span><span class="o">*</span> <span class="n">Tnode</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">Tnode</span><span class="p">;</span>
+
+	<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">temp</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+	<span class="n">insert</span><span class="p">(</span><span class="n">front</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rear</span><span class="p">,</span> <span class="n">temp</span><span class="p">);</span>
+	<span class="k">while</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">temp</span> <span class="o">=</span> <span class="n">Delete</span><span class="p">(</span><span class="o">&amp;</span><span class="n">front</span><span class="p">,</span> <span class="n">rear</span><span class="p">);</span>
+		<span class="k">if</span> <span class="p">(</span><span class="n">temp</span><span class="p">)</span> <span class="p">{</span>
+			<span class="n">printf</span><span class="p">(</span><span class="s">"%c "</span><span class="p">,</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">data</span><span class="p">);</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">)</span> <span class="p">{</span>
+				<span class="n">insert</span><span class="p">(</span><span class="n">front</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rear</span><span class="p">,</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">left</span><span class="p">);</span>
+			<span class="p">}</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">temp</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">)</span> <span class="p">{</span>
+				<span class="n">insert</span><span class="p">(</span><span class="n">front</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">rear</span><span class="p">,</span> <span class="n">temp</span><span class="o">-&gt;</span><span class="n">right</span><span class="p">);</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+		<span class="k">else</span> <span class="k">break</span><span class="p">;</span>
+	<span class="p">}</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">n13</span> <span class="o">=</span> <span class="n">makeRootNode</span><span class="p">(</span><span class="sc">'!'</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">n11</span> <span class="o">=</span> <span class="n">makeRootNode</span><span class="p">(</span><span class="sc">'D'</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">n10</span> <span class="o">=</span> <span class="n">makeRootNode</span><span class="p">(</span><span class="sc">'L'</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">n8</span> <span class="o">=</span> <span class="n">makeRootNode</span><span class="p">(</span><span class="sc">'R'</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">n7</span> <span class="o">=</span> <span class="n">makeRootNode</span><span class="p">(</span><span class="sc">'O'</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">n6</span> <span class="o">=</span> <span class="n">makeRootNode</span><span class="p">(</span><span class="sc">'W'</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="n">n13</span><span class="p">);</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">n5</span> <span class="o">=</span> <span class="n">makeRootNode</span><span class="p">(</span><span class="sc">'O'</span><span class="p">,</span> <span class="n">n10</span><span class="p">,</span> <span class="n">n11</span><span class="p">);</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">n4</span> <span class="o">=</span> <span class="n">makeRootNode</span><span class="p">(</span><span class="sc">'L'</span><span class="p">,</span> <span class="n">n8</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">);</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">n3</span> <span class="o">=</span> <span class="n">makeRootNode</span><span class="p">(</span><span class="sc">'L'</span><span class="p">,</span> <span class="n">n6</span><span class="p">,</span> <span class="n">n7</span><span class="p">);</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">n2</span> <span class="o">=</span> <span class="n">makeRootNode</span><span class="p">(</span><span class="sc">'E'</span><span class="p">,</span> <span class="n">n4</span><span class="p">,</span> <span class="n">n5</span><span class="p">);</span>
+	<span class="n">treeNode</span><span class="o">*</span> <span class="n">n1</span> <span class="o">=</span> <span class="n">makeRootNode</span><span class="p">(</span><span class="sc">'H'</span><span class="p">,</span> <span class="n">n2</span><span class="p">,</span> <span class="n">n3</span><span class="p">);</span>
+
+	<span class="n">printf</span><span class="p">(</span><span class="s">"전위순회: "</span><span class="p">);</span>
+	<span class="n">preorder</span><span class="p">(</span><span class="n">n1</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"중위순회: "</span><span class="p">);</span>
+	<span class="n">inorder</span><span class="p">(</span><span class="n">n1</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"후위순회: "</span><span class="p">);</span>
+	<span class="n">postorder</span><span class="p">(</span><span class="n">n1</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"레벨순회: "</span><span class="p">);</span>
+	<span class="n">level</span><span class="p">(</span><span class="n">n1</span><span class="p">);</span>
+
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+:ET
