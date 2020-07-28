@@ -1,0 +1,214 @@
+I"�;<hr />
+
+<h3 id="우선순위-큐priority-queue">우선순위 큐(Priority Queue)</h3>
+<p>기존의 선입선출(FIFO) 방식인 큐(queue)와는 달리 우선순위가 높은 데이터부터 나오는 구조.
+이 우선순위는 사용자가 정한다.</p>
+
+<h6 id="구현-방법">구현 방법</h6>
+<ol>
+  <li>배열(array)을 이용한 구현</li>
+  <li>연결 리스트(linked list)를 이용한 구현</li>
+  <li>힙(heap)을 이용한 구현</li>
+</ol>
+
+<p>배열과 연결 리스트를 이용하면 손쉽게 우선순위 큐를 구현할 수 있지만 각각 명확한 단점이 존재하는데,</p>
+<ul>
+  <li>
+    <p><strong>배열</strong>은 기본적으로 데이터의 삽입 및 삭제 시 기존에 존재하던 데이터를 밀어내거나 당겨와야 한다. 즉 데이터가 많아지면 그 단점은 더욱 두드러지게 된다.</p>
+  </li>
+  <li>
+    <p><strong>연결 리스트</strong>는 모든 노드에 접근해가며 비교 연산을 해야 한다는 점에서 역시나 데이터가 많아지면 단점을 보이게 된다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">표현 방법</th>
+      <th style="text-align: center">삽입</th>
+      <th style="text-align: center">삭제</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">순서없는 배열</td>
+      <td style="text-align: center">O(1)</td>
+      <td style="text-align: center">O(n)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">순서없는 연결리스트</td>
+      <td style="text-align: center">O(1)</td>
+      <td style="text-align: center">O(n)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">정렬된 배열</td>
+      <td style="text-align: center">O(n)</td>
+      <td style="text-align: center">O(1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">정렬된 연결 리스트</td>
+      <td style="text-align: center">O(n)</td>
+      <td style="text-align: center">O(1)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><span style="color:red">힙(heap)</span></td>
+      <td style="text-align: center">O(logn)</td>
+      <td style="text-align: center">O(logn)</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<blockquote>
+
+  <p>위 표처럼 <strong>힙(heap)</strong>을 사용하여 구현하는 것이 가장 효율적이다.</p>
+</blockquote>
+
+<hr />
+
+<h3 id="힙heap">힙(heap)</h3>
+
+<p>힙(heap)이란 완전 이진트리의 한 종류로 우선순위 큐를 위해 만들어진 자료구조이다.</p>
+
+<h5 id="특징">특징</h5>
+<ol>
+  <li>여러 개의 값들 중에서 최대값이나 최솟값을 빠르게 찾아내는 것이 가능하다(최대 힙, 최소 힙)</li>
+  <li>부모 노드과 자식 노드과의 상-하 관계가 존재하지만 자식 노드(좌-우)간에 관계는 없다(반정렬 상태)</li>
+  <li>이진 탐색 트리와는 다르게 <strong>중복 값</strong>도 허용.</li>
+  <li>노드 A[n]의 왼쪽, 오른쪽 자식노드와 부모노드의 인덱스를 O(1) 시간에 연산</li>
+</ol>
+
+<h5 id="종류">종류</h5>
+<ol>
+  <li>최대 힙(Max Heap)
+    <ul>
+      <li>부모 노드 키 값 &gt;= 자식 노드 키 값 ==&gt; 루트 노드 최대값</li>
+    </ul>
+  </li>
+  <li>최소 힙(Min Heap)
+    <ul>
+      <li>부모 노드 키 값 &lt;= 자식 노드 키 값 ==&gt; 루트 노드 최소값</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+<h5 id="구현">구현</h5>
+<ul>
+  <li>구현은 보통 <strong>배열</strong>을 이용하여 구현한다.</li>
+  <li>구현의 편의성을 위해 배열의 0번 째 인덱스는 비워놓고 1번 인덱스부터 추가한다(1번 = 루트 노드의 키)</li>
+  <li>부모 노드와 자식 노드의 인덱스
+    <ul>
+      <li>parent_index = left or right_child / 2</li>
+      <li>left_child = parent_index * 2</li>
+      <li>right_child = (parent_index * 2) + 1</li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/88613954-a4cb1d00-d0c9-11ea-9b70-442693baf50c.PNG" alt="힙구조" /></p>
+
+<hr />
+
+<h5 id="heapc">heap.c</h5>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#define MAX 100
+</span>
+<span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">key</span><span class="p">;</span>
+<span class="p">}</span><span class="n">element</span><span class="p">;</span>
+
+<span class="k">typedef</span> <span class="k">struct</span> <span class="p">{</span>
+    <span class="n">element</span> <span class="n">heap</span><span class="p">[</span><span class="n">MAX</span><span class="p">];</span>
+    <span class="kt">int</span> <span class="n">heap_size</span><span class="p">;</span>
+<span class="p">}</span><span class="n">HeapType</span><span class="p">;</span>
+
+<span class="n">HeapType</span><span class="o">*</span> <span class="n">heap</span> <span class="o">=</span> <span class="n">create</span><span class="p">()</span> <span class="c1">// 동적 메모리 할당 </span>
+
+<span class="c1">// 힙 생성</span>
+<span class="n">HeapType</span> <span class="nf">create</span><span class="p">(){</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">HeapType</span><span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="n">HeapType</span><span class="p">));</span>
+<span class="p">}</span>
+
+<span class="c1">// 초기화</span>
+<span class="kt">void</span> <span class="nf">init</span><span class="p">(</span><span class="n">HeapType</span><span class="o">*</span> <span class="n">h</span><span class="p">){</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">heap_size</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// 힙의 삽입(힙에 새로운 요소가 들어오면, 마지막 노드에 붙이고 정렬)</span>
+<span class="kt">void</span> <span class="nf">insert_max_heap</span><span class="p">(</span><span class="n">HeapType</span><span class="o">*</span> <span class="n">h</span><span class="p">,</span> <span class="n">element</span> <span class="n">item</span><span class="p">){</span>
+    <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="o">++</span><span class="p">(</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">heap_size</span><span class="p">);</span>
+    
+    <span class="c1">// 트리를 올라가며 부모 노드와 비교</span>
+    <span class="k">while</span><span class="p">((</span><span class="n">i</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">item</span><span class="p">.</span><span class="n">key</span> <span class="o">&gt;</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">heap</span><span class="p">[</span><span class="n">i</span><span class="o">/</span><span class="mi">2</span><span class="p">].</span><span class="n">key</span><span class="p">)){</span>
+        <span class="n">h</span><span class="o">-&gt;</span><span class="n">heap</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">heap</span><span class="p">[</span><span class="n">i</span><span class="o">/</span><span class="mi">2</span><span class="p">];</span>
+        <span class="n">i</span> <span class="o">/=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">heap</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">item</span><span class="p">;</span> <span class="c1">// 새로운 노드 삽입 </span>
+<span class="p">}</span>
+
+<span class="c1">// 힙의 삭제(연산 O(logn)) </span>
+<span class="c1">// 루트 노드 삭제 -&gt; 마지막 노드를 루트 노드로 이동 -&gt; 루트에서부터 단말 노드까지 경로에 있는 노드들을 교환(정렬)</span>
+
+<span class="n">element</span> <span class="nf">delete_max_heap</span><span class="p">(</span><span class="n">HeapType</span><span class="o">*</span> <span class="n">h</span><span class="p">){</span>
+ <span class="kt">int</span> <span class="n">parent</span><span class="p">,</span> <span class="n">child</span><span class="p">;</span>
+ <span class="n">element</span> <span class="n">item</span><span class="p">,</span> <span class="n">temp</span><span class="p">;</span>
+ 
+ <span class="n">item</span> <span class="o">=</span> <span class="n">h</span><span class="o">-&gt;</span> <span class="n">heap</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+ <span class="n">temp</span> <span class="o">=</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">heap</span><span class="p">[(</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">heap_size</span><span class="p">)</span><span class="o">--</span><span class="p">];</span>
+ <span class="n">parent</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+ <span class="n">child</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+ <span class="k">while</span><span class="p">(</span><span class="n">child</span> <span class="o">&lt;=</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">heap_size</span><span class="p">){</span>
+    <span class="c1">// 현재 노드의 자식노드 중 더 큰 자식노드를 찾음</span>
+    <span class="k">if</span><span class="p">((</span><span class="n">child</span> <span class="o">&lt;</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">heap_size</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">h</span><span class="o">-&gt;</span><span class="n">heap</span><span class="p">[</span><span class="n">child</span><span class="p">].</span><span class="n">key</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">eheap</span><span class="p">[</span><span class="n">child</span><span class="o">+</span><span class="mi">1</span><span class="p">].</span><span class="n">key</span><span class="p">){</span>
+        <span class="n">child</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">temp</span><span class="p">.</span><span class="n">key</span> <span class="o">&gt;=</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">heap</span><span class="p">[</span><span class="n">child</span><span class="p">].</span><span class="n">key</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span>
+    <span class="c1">// 아래 단계로 이동</span>
+    <span class="n">h</span><span class="o">-&gt;</span><span class="n">heap</span><span class="p">[</span><span class="n">parent</span><span class="p">]</span> <span class="o">=</span> <span class="n">h</span><span class="o">-&gt;</span><span class="n">heap</span><span class="p">[</span><span class="n">child</span><span class="p">];</span>
+    <span class="n">parent</span> <span class="o">=</span> <span class="n">child</span><span class="p">;</span>
+    <span class="n">child</span> <span class="o">*=</span> <span class="mi">2</span><span class="p">;</span>
+ <span class="p">}</span>
+ <span class="n">h</span><span class="o">-&gt;</span><span class="n">heap</span><span class="p">[</span><span class="n">parent</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
+ <span class="k">return</span> <span class="n">item</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">element</span> <span class="n">e1</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">10</span> <span class="p">};</span>
+	<span class="n">element</span> <span class="n">e2</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">5</span> <span class="p">};</span>
+	<span class="n">element</span> <span class="n">e3</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">30</span> <span class="p">};</span>
+	<span class="n">element</span> <span class="n">e4</span><span class="p">,</span> <span class="n">e5</span><span class="p">,</span> <span class="n">e6</span><span class="p">;</span>
+
+	<span class="n">HeapType</span><span class="o">*</span> <span class="n">heap</span><span class="p">;</span>
+
+	<span class="n">heap</span> <span class="o">=</span> <span class="n">create</span><span class="p">();</span> <span class="c1">// 힙 생성</span>
+	<span class="n">init</span><span class="p">(</span><span class="n">heap</span><span class="p">);</span> <span class="c1">// 초기화</span>
+
+    <span class="c1">//삽입</span>
+	<span class="n">insert_max_heap</span><span class="p">(</span><span class="n">heap</span><span class="p">,</span> <span class="n">e1</span><span class="p">);</span>
+	<span class="n">insert_max_heap</span><span class="p">(</span><span class="n">heap</span><span class="p">,</span> <span class="n">e2</span><span class="p">);</span>
+	<span class="n">insert_max_heap</span><span class="p">(</span><span class="n">heap</span><span class="p">,</span> <span class="n">e3</span><span class="p">);</span>
+    
+    <span class="c1">//삭제</span>
+	<span class="n">e4</span> <span class="o">=</span> <span class="n">delete_max_heap</span><span class="p">(</span><span class="n">heap</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span> <span class="n">e4</span><span class="p">.</span><span class="n">key</span><span class="p">);</span>
+	<span class="n">e5</span> <span class="o">=</span> <span class="n">delete_max_heap</span><span class="p">(</span><span class="n">heap</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span> <span class="n">e5</span><span class="p">.</span><span class="n">key</span><span class="p">);</span>
+	<span class="n">e6</span> <span class="o">=</span> <span class="n">delete_max_heap</span><span class="p">(</span><span class="n">heap</span><span class="p">);</span>
+	<span class="n">printf</span><span class="p">(</span><span class="s">"%d"</span><span class="p">,</span> <span class="n">e6</span><span class="p">.</span><span class="n">key</span><span class="p">);</span>
+
+	<span class="n">free</span><span class="p">(</span><span class="n">heap</span><span class="p">);</span>
+
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<hr />
+
+<hr />
+
+:ET
