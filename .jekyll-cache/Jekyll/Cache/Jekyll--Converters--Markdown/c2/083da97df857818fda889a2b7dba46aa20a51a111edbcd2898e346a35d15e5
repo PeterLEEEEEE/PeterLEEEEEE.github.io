@@ -1,0 +1,81 @@
+I"|<hr />
+
+<h3 id="그래프graph">그래프(graph)</h3>
+
+<ul>
+  <li>트리가 1:n 구조의 자료구조 였다면 그래프는 n:n 구조의 자료구조이다.</li>
+  <li>
+    <p>그래프의 G는 (V, E)로 표시하는데, 이는 객체를 나타내는 <strong>정점(vertex)</strong>과 객체를 연결하는 <strong>간선(edge)</strong>으로 구성되어 있다.</p>
+  </li>
+  <li>정점(vertex): – 노드라고도 불림
+    <ul>
+      <li>여러 가지 특성을 가질 수 있는 객체를 의미</li>
+      <li>V(G): 그래프 G의 정점들의 집합</li>
+    </ul>
+  </li>
+  <li>간선(edge): – 링크
+    <ul>
+      <li>정점들 간의 관계 의미</li>
+      <li>E(G): 그래프 G의 간선들의 집합
+<img src="https://user-images.githubusercontent.com/52132160/88883052-44c1ab80-d26e-11ea-9760-43423be7f747.png" alt="image" /></li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="그래프의-종류">그래프의 종류</h5>
+
+<ol>
+  <li>무방향 그래프(undirected graph)
+    <ul>
+      <li>두 정점을 연결하는 간선에 방향이 없는 그래프</li>
+      <li>정점 Vi와 Vj를 연결하는 간선을 (Vi, Vj)라고 나타낸다.
+ <strong>(Vi, Vj) = (Vj, Vi)</strong>
+<img src="https://user-images.githubusercontent.com/52132160/88881887-8f8df400-d26b-11ea-8153-bab577d4511f.png" alt="image" />
+<img src="https://user-images.githubusercontent.com/52132160/88881911-a0d70080-d26b-11ea-8272-5f87d13aebc8.png" alt="image" /></li>
+    </ul>
+  </li>
+  <li>방향 그래프(directed graph), digraph
+    <ul>
+      <li>간선에 방향이 있는 그래프</li>
+      <li>정점 Vi에서 Vj를 연결하는 간선 즉, Vi -&gt; Vj를 &lt;Vi, Vj&gt; 로 표현
+        <ul>
+          <li>Vi를 tail, Vj를 head 라고 한다.</li>
+          <li><strong>&lt;Vi, Vj&gt;와 &lt;Vj, Vi&gt;</strong>는 서로 다른 간선이다.   <br />
+<img src="https://user-images.githubusercontent.com/52132160/88882128-3a061700-d26c-11ea-94ff-c1ed69827eec.png" alt="image" /></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>가중치 그래프(weighted graph), 네트워크
+    <ul>
+      <li>간선에 비용(cost)이나 가중치(weight)가 할당된 그래프
+<img src="https://user-images.githubusercontent.com/52132160/88882569-3aeb7880-d26d-11ea-9589-49e5e5a66585.png" alt="image" /></li>
+    </ul>
+  </li>
+</ol>
+
+<ul>
+  <li>etc. 완전 그래프(complete graph), 부분 그래프(subgraph)등 이 존재한다.</li>
+</ul>
+
+<hr />
+
+<hr />
+
+<h4 id="무방향-그래프의-구현">무방향 그래프의 구현</h4>
+<ul>
+  <li>무방향, 방향 그래프 모두 <strong>인접 행렬</strong>과 <strong>인접 리스트</strong> 두 가지 방법을 통해 구현 가능하다.</li>
+  <li>나는 화살표로 고통받는 걸 좋아하기 때문에 인접 리스트로 구현해 보았다.</li>
+</ul>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/88883876-5015d680-d270-11ea-9b6c-286ab90e1ac7.png" alt="image" /><a name="footnote_1"></a>:무방향 그래프의 인접리스트 표현
+<img src="https://user-images.githubusercontent.com/52132160/88884514-bf3ffa80-d271-11ea-85b7-d21596143572.png" alt="image" /><a name="footnote_1"></a>:방향 그래프의 인접리스트 표현</p>
+
+<h4 id="무방향-그래프c">무방향 그래프.c</h4>
+
+<figure class="highlight"><pre><code class="language-cpp" data-lang="cpp"><span class="cp">#include&lt;stdio.h&gt;
+#include&lt;stdlib.h&gt;</span></code></pre></figure>
+
+<hr />
+
+:ET

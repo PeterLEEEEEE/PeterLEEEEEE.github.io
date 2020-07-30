@@ -1,0 +1,39 @@
+I"L<hr />
+<h3 id="그래프graph">그래프(graph)</h3>
+
+<ul>
+  <li>트리가 1:n 구조의 자료구조 였다면 그래프는 n:n 구조의 자료구조이다.</li>
+  <li>
+    <p>그래프의 G는 (V, E)로 표시하는데, 이는 객체를 나타내는 <strong>정점(vertex)</strong>과 객체를 연결하는 <strong>간선(edge)</strong>으로 구성되어 있다.</p>
+  </li>
+  <li>정점(vertex): – 노드라고도 불림
+    <ul>
+      <li>여러 가지 특성을 가질 수 있는 객체를 의미</li>
+      <li>V(G): 그래프 G의 정점들의 집합</li>
+    </ul>
+  </li>
+  <li>간선(edge): – 링크
+    <ul>
+      <li>정점들 간의 관계 의미</li>
+      <li>E(G): 그래프 G의 간선들의 집합</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="그래프의-종류">그래프의 종류</h5>
+
+<ol>
+  <li>무방향 그래프(undirected graph)
+    <ul>
+      <li>두 정점을 연결하는 간선에 방향이 없는 그래프</li>
+      <li>정점 Vi와 Vj를 연결하는 간선을 (Vi, Vj)라고 나타낸다.
+ <strong>(Vi, Vj) = (Vj, Vi)</strong>
+<img src="https://user-images.githubusercontent.com/52132160/88881887-8f8df400-d26b-11ea-8153-bab577d4511f.png" alt="image" />
+<img src="https://user-images.githubusercontent.com/52132160/88881911-a0d70080-d26b-11ea-8272-5f87d13aebc8.png" alt="image" /></li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+
+:ET
