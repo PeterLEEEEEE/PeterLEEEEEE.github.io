@@ -3,7 +3,7 @@ layout: post
 title:  "오답노트 (2)"
 author: Peter
 categories: [ 한국어능력시험 ]
-image: https://images.unsplash.com/photo-1528784351875-d797d86873a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80
+image: assets/images/3.jpg
 tags: [summer]
 sitemap:
 changefreq: daily
