@@ -2,7 +2,7 @@
 layout: post
 title:  "What is Jekyll"
 author: jane
-categories: [ Jekyll, tutorial ]
+categories: [ 정보처리기사 ]
 image: assets/images/11.jpg
 ---
 

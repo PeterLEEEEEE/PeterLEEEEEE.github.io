@@ -2,7 +2,7 @@
 layout: post
 title:  "Powerful things you can do with the Markdown editor"
 author: sal
-categories: [ Jekyll, tutorial ]
+categories: [ 한국어능력시험 ]
 image: assets/images/4.jpg
 tags: [featured]
 ---

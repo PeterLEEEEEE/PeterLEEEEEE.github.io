@@ -2,7 +2,7 @@
 layout: post
 title:  "Markdown Example"
 author: jane
-categories: [ Jekyll, tutorial ]
+categories: [ 정보처리기사 ]
 image: assets/images/6.jpg
 tags: featured
 ---
