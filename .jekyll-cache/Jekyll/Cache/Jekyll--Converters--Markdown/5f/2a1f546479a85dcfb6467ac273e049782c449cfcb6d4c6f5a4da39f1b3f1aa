@@ -1,0 +1,29 @@
+I"�<hr />
+
+<h3 id="파이썬의-자료형">파이썬의 자료형</h3>
+
+<p>파이썬은 실제로 다른 프로그래밍 언어와는 다르게 자료형을 입력하진 않지만 그렇다고 해서 자료형이 없는 것은 아니다.
+이에 혼동하지 않도록 자료형을 정리해 보았다.</p>
+
+<p><em>Integer(int)</em>: 1, 300, 500 등의 정수
+<br /></p>
+
+<p><em>Floating point</em>(float): 1.3, 2.2 와 같은 소수점을 포함한 숫자
+<br /></p>
+
+<p><em>String(str)</em>: 글자의 unicode로 이루어진 순서있는 집합, ‘hi’, ‘pineapple’ 등
+<br /></p>
+
+<p><em>list</em>: 순서가 있는 수정가능한 객체의 집합([1,’a’, True]와 같은 모습)
+<br />
+<em>Tuple(tup)</em>: 순서가 있는 불변한 객체의 집합, (1, ‘a’) 와 같이 표시.
+<br /></p>
+
+<p><em>Dictionary(dict)</em>: 불변한 키(key)와 수정가능한 값(value)로 매핑된 
+<br />
+<em>set</em>:
+<br />
+<em>Booleans(bool)</em>: 
+—</p>
+
+:ET
