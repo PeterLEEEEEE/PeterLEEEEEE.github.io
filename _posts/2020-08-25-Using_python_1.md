@@ -21,13 +21,13 @@ image: assets/images/1.jpg
 *String(str)*: 글자의 unicode로 이루어진 순서있는 집합, 'hi', 'pineapple' 등
 <br><br>
 
-*list*: 순서가 있는 수정가능한 객체의 집합([1,'a', True]와 같은 모습)
+*list*: **순서가 있는 수정가능한** 객체의 집합([1,'a', True]와 같은 모습)
 <br><br>
 
-*Tuple(tup)*: 순서가 있는 불변한 객체의 집합, (1, 'a') 와 같이 표시.
+*Tuple(tup)*: **순서가 있는 불변한** 객체의 집합, (1, 'a') 와 같이 표시.
 <br><br>
  
-*Dictionary(dict)*: 불변한 키(key)와 수정가능한 값(value)로 매핑된 순서가 없는 집합. {'a': 1, 'abc':5} 와 같이 표현.
+*Dictionary(dict)*: 불변한 키(key)와 수정가능한 값(value)로 매핑된 **순서가 없는** 집합. {'a': 1, 'abc':5} 와 같이 표현.
 <br><br>
 
 *set*: 말 그대로 집합이다. dictionary와 같이 중괄호{} 를 사용하지만 key가 없고 값만 존재한다. 내부 원소는 불변한 값만 가질 수 있다(list 불가능)
