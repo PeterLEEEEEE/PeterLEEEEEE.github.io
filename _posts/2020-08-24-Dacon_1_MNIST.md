@@ -4,6 +4,10 @@ title:  "코랩을 이용한 MNIST 핸들링(1)"
 author: Peter
 categories: [ Data Handling ]
 image: assets/images/11.jpg
+
+sitemap:
+changefreq: daily
+priority: 1.0
 ---
 ---
 

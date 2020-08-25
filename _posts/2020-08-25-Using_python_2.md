@@ -3,7 +3,10 @@ layout: post
 title:  "파이썬에서 자주 혼동되는 내용 정리(2)"
 author: Peter
 categories: [ Python ]
-image: assets/images/2.jpg
+image: https://user-images.githubusercontent.com/52132160/91168969-76188480-e711-11ea-8dc7-bbd132814fa8.png
+sitemap:
+changefreq: daily
+priority: 1.0
 ---
 ---
 
