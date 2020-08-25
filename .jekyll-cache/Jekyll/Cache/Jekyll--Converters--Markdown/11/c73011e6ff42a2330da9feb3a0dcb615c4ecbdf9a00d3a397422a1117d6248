@@ -1,0 +1,151 @@
+I"�<hr />
+<h3 id="운영체제os-operating-system">운영체제(OS; Operating System)</h3>
+<p>소프트웨어</p>
+<ul>
+  <li>시스템SW: <code class="language-html highlighter-rouge">운영체제</code></li>
+  <li>응용SW
+<br /><br />
+<strong>정의</strong></li>
+  <li>시스템의 자원을 효율적으로 관리, 편리하고 효과적으로 사용할 수 있도록 환경 제공
+<br /><br />
+<strong>목적</strong>(기준)</li>
+  <li>처리 능력 향상, 반환 시간 단축, 사용 가능도 향상, 신뢰도 향상
+<br /><br />
+<strong>기능</strong></li>
+  <li>프로세서, 기억장치, 입출력 장치, 파일 및 정보 등의 자원 관리
+<br /><br />
+<strong>종류</strong></li>
+  <li>Windows, UNIX, LINUX, MacOS
+<br /><br /></li>
+</ul>
+
+<hr />
+<h3 id="windows">Windows</h3>
+<p><strong>개요</strong></p>
+<ul>
+  <li>GUI, 선점형 멀티태스킹(강제종료 가능)</li>
+  <li>PnP: 자동 감지 기능(프린터, USB 등)</li>
+  <li>OLE: 다른 여러 응용 프로그램에서 작성된 문자나 그림 등의 개체를 현재 작성 중인 문서에 자유롭게 연결하거나 삽입하여 편집 가능</li>
+</ul>
+
+<hr />
+<h3 id="unixlinuxmacos">UNIX/LINUX/MacOS</h3>
+<p><strong>UNIX 개요 및 특징</strong></p>
+<ul>
+  <li>대화식 운영체제</li>
+  <li>다중 사용자(Multi-User, 다중 작업(Multi-Tasking)</li>
+  <li>트리 구조의 파일 시스템
+<br /><br />
+<strong>UNIX 시스템 구성</strong></li>
+  <li>커널(kernel): UNIX의 가장 핵심적인 부분, 주기억장치에 적재된 후 상주하면서 실행</li>
+  <li>쉘(Shell): 사용자의 명령어를 인식하여 프로그램을 호출하고 명령을 수행하는 명령어 해석기, <code class="language-html highlighter-rouge">파이프라인</code> 기능 지원 
+<br /><br />
+—
+    <h3 id="기억장치-관리">기억장치 관리</h3>
+    <p><strong>개요</strong></p>
+  </li>
+  <li>기억장치는 레지스트, 캐시 기억장치, 주기억장치, 보조기억장치와 같이 계층 구조로 분류</li>
+</ul>
+
+<p><strong>기억장치 관리 전략</strong></p>
+<ul>
+  <li><strong>fetch(반입 전력)</strong>
+    <ul>
+      <li>보조기억장치에 보관중인 프로그램이나 데이터를 언제 주기억장치로 적재할 것인지 결정
+        <ul>
+          <li>요구 반입(Demand Fetch): cpu가 직접 요구할 때 적재</li>
+          <li>예상 반입(Anticipatory Fetch): 미리 예상해서 주기억장치에 적재
+<br /><br /></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Placement(배치 전략)</strong>
+    <ul>
+      <li>주기억장치의 어디에 위치시킬 것인지 결정
+        <ul>
+          <li>최초 적합(First Fit): 빈 영역 중에서 첫 번째 분할 영역 배치</li>
+          <li>최적 적합(Best Fit): 빈 영역 중에서 단편화를 가장 작게 남기는 분할 영역 배치</li>
+          <li>최악 적합(Worst Fit): 단편화를 가장 많이 남기는 분할 영역에 배치
+<br /><br /></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Replacement(교체 전략)</strong>
+    <ul>
+      <li>주기억장치의 모든 영역이 이미 사용중인 상태에서 새로운 프로그램이나 데이터를 주기억장치에 배치하려고 할 때, 이미 사용되고 있는 영역 중에서 어느 영역을 교체하여 사용할 것인지를 결정하는 전략.
+        <ul>
+          <li>
+            <font size="3">FIFO, LRU, LFU, NUR 기법 등이 존재</font>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p><br /><br /></p>
+
+<hr />
+
+<h3 id="주기억장치-할당-기법">주기억장치 할당 기법</h3>
+<p><strong>개념</strong><br /></p>
+<ul>
+  <li>연속 할당 기법: 연속으로 할당하는 기법, 단일 분할 할당과 다중 분할 할당 기법이 있다.</li>
+  <li>분산 할당 기법: 사용자 영역을 분할하여 할당함. 페이징 기법, 세그멘테이션 기법이 존재</li>
+</ul>
+
+<hr />
+
+<h3 id="가상기억장치-구현-기법">가상기억장치 구현 기법</h3>
+
+<p><strong>개요</strong></p>
+<ul>
+  <li>보조기억장치(하드)의 일부를 주기억장치처럼 사용하는 것
+    <ul>
+      <li>주기억장치의 용량보다 큰 프로그램을 실행</li>
+      <li>주기억장치의 이용률과 다중 프로그래밍의 효율을 높을 수 있음.
+<br /><br /></li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>페이징(Paging) 기법</strong></p>
+<ul>
+  <li>가상기억장치에 보관되어 있는 프로그램과 주기억장치의 영역을 동일한 크기로 나눈 후 나눠진 프로그램(페이지)을 <code class="language-html highlighter-rouge">동일하게 나눠진</code> 주기억장치의 영역(페이지 프레임)에 적재시켜 실행하는 기법.</li>
+  <li>내부단편화는 발생할 수 있되 외부단편화는 발생하지 않음.<br /><br /></li>
+</ul>
+
+<p><strong>세그멘테이션(Segmentation) 기법</strong></p>
+<ul>
+  <li>프로그램을 <code class="language-html highlighter-rouge">다양한 크기의 논리적인 단위</code>로 나눈 후 주기억장치에 적재시켜 실행</li>
+  <li>외부단편화는 발생할 수 있지만 내부단편화는 발생하지 않음
+   <br /><br /></li>
+</ul>
+
+<hr />
+
+<h3 id="가상기억장치-기타-관리-사항">가상기억장치 기타 관리 사항</h3>
+<p><strong>페이지 크기</strong></p>
+<ul>
+  <li>작을 경우: 페이지 맵 테이블의 크기가 커지고, 매핑 속도가 늦어짐</li>
+  <li>클 경우: 페이지 맵 테이블의 크기가 작아지고, 매핑 속도가 빨라짐.
+   <br /><br />
+<strong>Locality</strong></li>
+  <li>주기억장치를 참조할 때 일부 페이지만 집중적으로 참조하는 성질.<br /><br /></li>
+  <li><strong>워킹 셋(Working Set)</strong></li>
+  <li>데닝이 제안한 프로그램의 움직임에 대한 모델, 프로세스가 일정 시간 동안 자주 참조하는 페이지들의 집합.</li>
+  <li>워킹 셋은 시간에 따라 변경됨.
+   <br /><br />
+<strong>프리페이징(Prepaging)</strong></li>
+  <li>페이지 부재를 방지하기 위해 필요할 것 같은 모든 페이지를 한꺼번에 페이지 프레임에 적재하는 기법.
+<br /><br />
+<strong>스래싱(Thrashing)</strong></li>
+  <li>프로세스의 처리 시간보다 페이지 교체에 소요되는 시간이 더 많아지는 현상</li>
+  <li>다중 프로그래밍의 정도가 높아짐에 따라 하나의 프로세스 수행 과정중 자주 페이지 부재가 발생함으로써 나타나는 현상</li>
+  <li>
+    <hr />
+  </li>
+</ul>
+:ET

@@ -1,0 +1,21 @@
+I"�<hr />
+<h3 id="운영체제os-operating-system">운영체제(OS; Operating System)</h3>
+<p>소프트웨어</p>
+<ul>
+  <li>시스템SW: <code class="language-html highlighter-rouge">운영체제</code></li>
+  <li>응용SW
+<br /><br />
+<strong>정의</strong></li>
+  <li>시스템의 자원을 효율적으로 관리, 편리하고 효과적으로 사용할 수 있도록 환경 제공
+<br /><br />
+<strong>목적</strong>(기준)</li>
+  <li>처리 능력 향상, 반환 시간 단축, 사용 가능도 향상, 신뢰도 향상
+<br /><br />
+<strong>기능</strong></li>
+  <li>프로세서, 기억장치, 입출력 장치, 파일 및 정보 등의 자원 관리
+<br /><br />
+<strong>종류</strong></li>
+  <li>Windows, UNIX, LINUX, MacOS
+<br /><br /></li>
+</ul>
+:ET

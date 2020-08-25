@@ -1,0 +1,48 @@
+I"�<div class="container">
+<div class="row justify-content-center">
+    <div class="col-md-8">        
+        <div class="row align-items-center mb-5">
+            <div class="col-md-9">
+                <h2 class="font-weight-bold">Jane <span class="small btn btn-outline-success btn-sm btn-round"><a href="">Follow</a></span></h2>
+                <p><a href=""></a></p>
+                <p class="excerpt"></p>
+            </div>
+            <div class="col-md-3 text-right">
+                <img alt="" src="/" class="rounded-circle" height="100" width="100" />
+            </div>
+        </div>
+        <h4 class="font-weight-bold spanborder"><span>Posts by Jane</span></h4>
+            
+            
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/EIP-3-1/">정보처리기사 3과목 - 데이터베이스(1)</a>
+	</h2>
+	<p class="excerpt">
+	   E-R(개체-관계) 모델
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Aug 20, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/EIP-3-1/">
+	<img class="w-100" src="/assets/images/11.jpg" alt="정보처리기사 3과목 - 데이터베이스(1)" />
+	</a>
+	</div>
+
+</div>
+            
+    </div>
+</div>
+</div>
+:ET
