@@ -1,0 +1,55 @@
+I"�<hr />
+
+<h3 id="파일-입출력io">파일 입출력(I/O)</h3>
+
+<p><strong>%%writefile 로 txt 파일 쓰기</strong> 
+<img src="https://user-images.githubusercontent.com/52132160/91330985-25825380-e805-11ea-96ed-46f1322005a9.png" alt="image" />
+<br /><br /></p>
+
+<p><strong>pwd로 경로 확인</strong>
+<img src="https://user-images.githubusercontent.com/52132160/91331169-637f7780-e805-11ea-9566-344883999a51.png" alt="image" />
+여기 나타난 경로에 내 txt 파일이 저장된다.
+<br /><br /></p>
+
+<p><strong>파일 열기 및 읽어오기</strong>
+<img src="https://user-images.githubusercontent.com/52132160/91331243-7db95580-e805-11ea-9327-e19fe9e18fe4.png" alt="image" />
+\n은 개행 표시이다.(모든 문장을 하나의 string 으로 가져옴)
+<br /><br /></p>
+
+<p><strong>파일 포인터 초기화</strong>
+<img src="https://user-images.githubusercontent.com/52132160/91331363-a3465f00-e805-11ea-95ad-7b72dadf37e4.png" alt="image" />
+다시 한번 파일을 읽어오려 하면 ‘’ 이 출력되는데, 파일 포인터가 이미 텍스트를 모두 읽고 더 이상 뒤에 아무것도 없기 때문이다. 당황하지 말고 seek을 사용하여 파일 포인터를 앞으로 땡겨주면 된다.<br />
+<br /><br /></p>
+
+<p><strong>readline()</strong>
+<img src="https://user-images.githubusercontent.com/52132160/91331867-53b46300-e806-11ea-8333-dcb2f3f2e2ac.png" alt="image" />
+기존에 read는 모든 문장을 하나로 받았다면 readline은 각 문장마다(\n 단위) 끊어서 저장되어 반복문을 사용할 수 있게 된다. 
+<br /><br /></p>
+
+<hr />
+
+<h3 id="다른-경로에-저장된-파일-입출력">다른 경로에 저장된 파일 입출력</h3>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/91431077-cff88600-e89a-11ea-85e2-c088ad539b86.png" alt="image" />
+open 안에 모든 경로를 입력시켜주면 된다.
+<br /><br /></p>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/91431530-75abf500-e89b-11ea-80da-49c553ca9541.png" alt="image" />
+다 사용한 파일은 close 를 사용하여 닫아주어야 한다! 하지만 우리는 좀 더 편한 방법을 사용할 수 있는데, 
+<img src="https://user-images.githubusercontent.com/52132160/91432017-1b5f6400-e89c-11ea-9c06-2d83c418a9c4.png" alt="image" />
+이런 식으로 선언해 주면 indent 안에서만 돌아가기 때문에 close를 안써도 된다.
+<br /><br />
+<strong>읽기 모드를 이용한 예시</strong>
+<img src="https://user-images.githubusercontent.com/52132160/91432623-f6b7bc00-e89c-11ea-9ef8-a6b27701edcb.png" alt="image" />
+read()는 전체 문장 출력, readline()은 첫문장만 출력
+<br /><br /></p>
+
+<p><strong>파일 입출력 append 기능</strong>
+<img src="https://user-images.githubusercontent.com/52132160/91432854-4e562780-e89d-11ea-971a-fb091f3a83cf.png" alt="image" />
+mode = ‘a’ 를 사용하면 list의 append처럼 뒤로 붙여 쓸 수 있다.
+<br /><br />
+<br /><br /></p>
+
+<hr />
+
+:ET

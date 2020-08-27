@@ -1,4 +1,4 @@
-I"81<!--
+I"l1<!--
 타이틀 :
 -->
 
@@ -17,6 +17,36 @@
         <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
         
 
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/EIP_2-2/">2과목: 요약 정리(2) - 제품 소프트웨어 패키징</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Aug 11, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/EIP_2-2/">
+	<img class="w-100" src="/assets/images/5.jpg" alt="2과목: 요약 정리(2) - 제품 소프트웨어 패키징" />
+	</a>
+	</div>
+
+</div>
+        
         
         
             <div class="mb-5 d-flex justify-content-between main-loop-card">
@@ -282,36 +312,6 @@
 	<div class="col-md-3 pr-0 text-right">
 	<a href="/kbs_summary_1/">
 	<img class="w-100" src="https://images.unsplash.com/photo-1528784351875-d797d86873a1?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" alt="오답노트 (1)" />
-	</a>
-	</div>
-
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/Data_Structure_5_graph/">그래프(Graph)</a>
-	</h2>
-	<p class="excerpt">
-	   그래프(graph)
-	</p>
-	<small class="d-block text-muted">
-		In <span class="catlist">
-		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#datastructure">DataStructure</a><span class="sep">, </span>
-		
-		</span>
-	</small>
-	<small class="text-muted">
-		Jul 30, 2020
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/Data_Structure_5_graph/">
-	<img class="w-100" src="/assets/images/5.jpg" alt="그래프(Graph)" />
 	</a>
 	</div>
 

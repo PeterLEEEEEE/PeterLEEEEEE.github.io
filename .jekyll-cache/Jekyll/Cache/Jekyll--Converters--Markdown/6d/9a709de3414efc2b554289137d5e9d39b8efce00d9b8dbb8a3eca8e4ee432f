@@ -1,4 +1,4 @@
-I"�f<div class="container">
+I"}j<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
         <h1 class="font-weight-bold title h6 text-uppercase mb-4">Categories</h1>
@@ -780,6 +780,39 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Using_python_4/">파이썬에서 자주 혼동되는 내용 정리(4) - 파일 입출력</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Aug 27, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Using_python_4/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91169688-b88e9100-e712-11ea-9bf5-2e45542d41c6.png" alt="파이썬에서 자주 혼동되는 내용 정리(4) - 파일 입출력" />
+	</a>
+	</div>
+
+</div>
+          
+        
+        
+        
+          
+         
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
 	<a class="text-dark" href="/Using_python_3/">파이썬에서 자주 혼동되는 내용 정리(3)</a>
 	</h2>
 	<p class="excerpt">
@@ -793,7 +826,7 @@
 		</span>
 	</small>
 	<small class="text-muted">
-		Aug 25, 2020
+		Aug 26, 2020
 	</small>
 </div>
 

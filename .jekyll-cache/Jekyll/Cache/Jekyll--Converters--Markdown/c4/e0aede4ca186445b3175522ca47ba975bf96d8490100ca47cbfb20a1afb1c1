@@ -1,4 +1,4 @@
-I"f"<!--
+I"U%<!--
 타이틀 :
 -->
 
@@ -17,6 +17,36 @@
         <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
         
 
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Data_Structure_5_graph/">그래프(Graph)</a>
+	</h2>
+	<p class="excerpt">
+	   그래프(graph)
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#datastructure">DataStructure</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Jul 30, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Data_Structure_5_graph/">
+	<img class="w-100" src="/assets/images/5.jpg" alt="그래프(Graph)" />
+	</a>
+	</div>
+
+</div>
+        
         
         
             <div class="mb-5 d-flex justify-content-between main-loop-card">
