@@ -3,7 +3,7 @@ layout: post
 title:  "파이썬에서 자주 혼동되는 내용 정리(4) - 파일 입출력"
 author: Peter
 categories: [ Python ]
-image: https://user-images.githubusercontent.com/52132160/91169688-b88e9100-e712-11ea-9bf5-2e45542d41c6.png
+image: https://user-images.githubusercontent.com/52132160/91701223-ef9cf080-ebb1-11ea-88c2-7983ceabbb5a.png
 
 sitemap:
 changefreq: daily
