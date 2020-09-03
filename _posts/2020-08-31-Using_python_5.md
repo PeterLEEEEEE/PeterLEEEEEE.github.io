@@ -11,7 +11,7 @@ sitemap:
 changefreq: daily
 priority: 1.0
 ---
-
+---
 
 이번 포스트에서는 파이썬을 사용하면서 유용하게 사용할 수 있는 기능들을 공유 해 보려고 한다.
 지금부터 소개할 세 가지 기능 모두 눈으로는 알고 있으나 막상 사용하려면 잘 기억이 안나서 이번 기회에 정리 해 보았다.
@@ -43,6 +43,8 @@ priority: 1.0
 ![image](https://user-images.githubusercontent.com/52132160/91700118-53261e80-ebb0-11ea-9bdb-3da1c5b1fb1d.png)
 리스트 3개도 거뜬하다!
 <br><br>
+
+--- 
 
 ### 3. randint
 
