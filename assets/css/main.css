@@ -242,6 +242,8 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+  display: block;
+  margin: auto;
 }
 
 svg {
@@ -9948,11 +9950,11 @@ html {
   }
 }
 .container-lg {
-  max-width: 1140px;
+  max-width: 1280px;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 .container-fluid {

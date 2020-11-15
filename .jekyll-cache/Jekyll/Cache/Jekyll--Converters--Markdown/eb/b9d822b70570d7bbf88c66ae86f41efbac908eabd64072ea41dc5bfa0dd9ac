@@ -1,4 +1,4 @@
-I"l	<hr />
+I"s	<hr />
 
 <p>이번 포스트에서는 파이썬을 사용하면서 유용하게 사용할 수 있는 기능들을 공유 해 보려고 한다.
 지금부터 소개할 세 가지 기능 모두 눈으로는 알고 있으나 막상 사용하려면 잘 기억이 안나서 이번 기회에 정리 해 보았다.</p>
@@ -13,8 +13,9 @@
 <br /></li>
 </ul>
 
-<p><img src="https://user-images.githubusercontent.com/52132160/91699231-f1b18000-ebae-11ea-9a2b-05b2654b0fc6.png" alt="image" />
-이렇게 인덱스랑 원소를 따로 출력할 수도 있다.
+<p><img src="https://user-images.githubusercontent.com/52132160/91699231-f1b18000-ebae-11ea-9a2b-05b2654b0fc6.png" alt="image" /></p>
+
+<p>이렇게 인덱스랑 원소를 따로 출력할 수도 있다.
 <br /><br /></p>
 
 <hr />
@@ -53,5 +54,4 @@
 <p>다음에 또 유용한 게 있으면 가져 오도록 하겠다.</p>
 
 <hr />
-
 :ET
