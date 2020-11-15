@@ -24,7 +24,7 @@ priority: 1.0
 
 다음은 대회에서 제공하는 데이터인 train.csv와 test.csv를 가져와서 데이터가 어떻게 구성되어 있는 지 파악해볼 것이다. 둘 다 csv 파일로 pandas를 사용하여 쉽게 가져올 수 있다. 
 ![image](https://user-images.githubusercontent.com/52132160/92951060-ba897b80-f498-11ea-8d54-7ba55ed6e834.png)
-.shape을 활용해 데이터 구성을 볼 수 있다. train 데이터는 2048장의 이미지를 test 데이터는 20480장으로 train 데이터의 10배가 된다.(786과 785는 가로,세로 픽셀)
+.shape을 활용해 데이터 구성을 볼 수 있다. train 데이터는 2048장의 이미지를 test 데이터는 20480장으로 train 데이터의 10배가 된다.(786과 785는 가로,세로 픽셀 + letter, digit column)
 <br><br>
 
 그래도 혹시 몰라 .head를 이용해 상위 5개의 데이터를 찍어보았고 아래 사진과 같이 구성되어 있음을 알 수 있었다. test 데이터는 digit이 없어 가로 1 차이가 있다.

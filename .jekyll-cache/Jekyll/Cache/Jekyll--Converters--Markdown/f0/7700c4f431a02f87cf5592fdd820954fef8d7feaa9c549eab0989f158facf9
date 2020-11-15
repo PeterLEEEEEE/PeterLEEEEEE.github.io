@@ -1,4 +1,4 @@
-I"�M<!--
+I"�L<!--
 타이틀 :
 -->
 
@@ -15,26 +15,26 @@
     
     <div class="col-md-6">
     <div class="card border-0 mb-4 box-shadow">   
-    <a href="/Using_python_5/">
+    <a href="/Attention/">
     <div class="topfirstimage" style="background-image: url(https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
     </a>
     <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
     <h2 class="h4 font-weight-bold">
-    <a class="text-dark" href="/Using_python_5/">파이썬에서 유용한 기능 정리(1) - enumerate, zip, randint</a>
+    <a class="text-dark" href="/Attention/">Transformer를 공부하기 위해 얻은 지식들</a>
     </h2>
     <p class="excerpt">
-        이번 포스트에서는 파이썬을 사용하면서 유용하게 사용할 수 있는 기능들을 공유 해 보려고 한다.지금부터 소개할 세 가지 기능 모두 눈으로는 알고 있으나 막상 사용하려면 잘 기억이 안나서 이번 기회에 정리 해 보았다.
+        
     </p>
     <div>
         <small class="d-block text-muted">
             In <span class="catlist">
                 
-                <a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
+                <a class="text-capitalize text-muted smoothscroll" href="/categories.html#nlp">NLP</a><span class="sep">, </span>
                 
                 </span>                   
         </small>
         <small class="text-muted">
-            Aug 31, 2020
+            Nov 10, 2020
         </small>
     </div>
     </div>
@@ -46,19 +46,69 @@
         <!-- second latest post --><div class="mb-3 d-flex align-items-center">                
                 
                 <div class="col-md-4">
-                <a href="/DiveintoData_1_MNIST/">
-                 <img class="w-100" src="https://user-images.githubusercontent.com/52132160/91169688-b88e9100-e712-11ea-9bf5-2e45542d41c6.png" alt="MNIST - " />
+                <a href="/Using_python_6-copy/">
+                 <img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter" />
                 </a>
                 </div>
                                 
                 <div>
                     <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="/DiveintoData_1_MNIST/">MNIST - </a>
+                    <a class="text-dark" href="/Using_python_6-copy/">파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter</a>
                     </h2>
                     <small class="d-block text-muted">
                         In <span class="catlist">
                         
                         <a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
+                        
+                        </span>                   
+                    </small>
+                    <small class="text-muted">
+                        Sep 03, 2020
+                    </small>
+                </div>
+            </div>
+        
+        <!-- third latest post --><div class="mb-3 d-flex align-items-center">                
+                
+                <div class="col-md-4">
+                <a href="/Using_python_5/">
+                 <img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="파이썬에서 유용한 기능 정리(1) - enumerate, zip, randint" />
+                </a>
+                </div>
+                                
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="/Using_python_5/">파이썬에서 유용한 기능 정리(1) - enumerate, zip, randint</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                        
+                        <a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
+                        
+                        </span>                   
+                    </small>
+                    <small class="text-muted">
+                        Aug 31, 2020
+                    </small>
+                </div>
+            </div>
+        
+        <!-- fourth latest post --><div class="mb-3 d-flex align-items-center">                
+                
+                <div class="col-md-4">
+                <a href="/DiveintoData_1_MNIST/">
+                <img class="w-100" src="https://user-images.githubusercontent.com/52132160/91169688-b88e9100-e712-11ea-9bf5-2e45542d41c6.png" alt="월간 데이콘7 - 글자에 숨겨진 숫자 이미지 예측(MNIST)" />
+                </a>
+                </div>
+                                
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="/DiveintoData_1_MNIST/">월간 데이콘7 - 글자에 숨겨진 숫자 이미지 예측(MNIST)</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                        
+                        <a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
                         
                         </span>                   
                     </small>
@@ -68,61 +118,15 @@
                 </div>
             </div>
         
-        <!-- third latest post --><div class="mb-3 d-flex align-items-center">                
-                
-                <div class="col-md-4">
-                <a href="/Using_python_4/">
-                 <img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701223-ef9cf080-ebb1-11ea-88c2-7983ceabbb5a.png" alt="파이썬에서 자주 혼동되는 내용 정리(4) - 파일 입출력" />
-                </a>
-                </div>
-                                
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="/Using_python_4/">파이썬에서 자주 혼동되는 내용 정리(4) - 파일 입출력</a>
-                    </h2>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                        
-                        <a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
-                        
-                        </span>                   
-                    </small>
-                    <small class="text-muted">
-                        Aug 27, 2020
-                    </small>
-                </div>
-            </div>
-        
-        <!-- fourth latest post --><div class="mb-3 d-flex align-items-center">                
-                
-                <div class="col-md-4">
-                <a href="/Using_python_3/">
-                <img class="w-100" src="https://user-images.githubusercontent.com/52132160/91169688-b88e9100-e712-11ea-9bf5-2e45542d41c6.png" alt="파이썬에서 자주 혼동되는 내용 정리(3)" />
-                </a>
-                </div>
-                                
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="/Using_python_3/">파이썬에서 자주 혼동되는 내용 정리(3)</a>
-                    </h2>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                        
-                        <a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
-                        
-                        </span>                   
-                    </small>
-                    <small class="text-muted">
-                        Aug 26, 2020
-                    </small>
-                </div>
-            </div>
-        
     </div>
     
 </div>
     
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
+ 
+
+ 
+
  
 
  
@@ -219,10 +223,70 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Attention/">Transformer를 공부하기 위해 얻은 지식들</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#nlp">NLP</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Nov 10, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Attention/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="Transformer를 공부하기 위해 얻은 지식들" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Using_python_6-copy/">파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Sep 03, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Using_python_6-copy/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
 	<a class="text-dark" href="/Using_python_5/">파이썬에서 유용한 기능 정리(1) - enumerate, zip, randint</a>
 	</h2>
 	<p class="excerpt">
-	   이번 포스트에서는 파이썬을 사용하면서 유용하게 사용할 수 있는 기능들을 공유 해 보려고 한다.지금부터 소개할 세 가지 기능 모두 눈으로는 알고 있으나 막상 사용하려면 잘 기억이 안나서 이번 기회에 정리 해 보았다.
+	   
 	</p>
 	<small class="d-block text-muted">
 		In <span class="catlist">
@@ -249,7 +313,7 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/DiveintoData_1_MNIST/">MNIST - </a>
+	<a class="text-dark" href="/DiveintoData_1_MNIST/">월간 데이콘7 - 글자에 숨겨진 숫자 이미지 예측(MNIST)</a>
 	</h2>
 	<p class="excerpt">
 	   
@@ -257,7 +321,7 @@
 	<small class="d-block text-muted">
 		In <span class="catlist">
 		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
 		
 		</span>
 	</small>
@@ -268,7 +332,7 @@
 
 	<div class="col-md-3 pr-0 text-right">
 	<a href="/DiveintoData_1_MNIST/">
-	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91169688-b88e9100-e712-11ea-9bf5-2e45542d41c6.png" alt="MNIST - " />
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91169688-b88e9100-e712-11ea-9bf5-2e45542d41c6.png" alt="월간 데이콘7 - 글자에 숨겨진 숫자 이미지 예측(MNIST)" />
 	</a>
 	</div>
 
@@ -449,66 +513,6 @@
 	<div class="col-md-3 pr-0 text-right">
 	<a href="/Dacon_1_MNIST/">
 	<img class="w-100" src="/assets/images/11.jpg" alt="코랩을 이용한 MNIST 핸들링(1)" />
-	</a>
-	</div>
-
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/EIP-3-1/">정보처리기사 3과목 - 데이터베이스(1)</a>
-	</h2>
-	<p class="excerpt">
-	   E-R(개체-관계) 모델
-	</p>
-	<small class="d-block text-muted">
-		In <span class="catlist">
-		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
-		
-		</span>
-	</small>
-	<small class="text-muted">
-		Aug 20, 2020
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/EIP-3-1/">
-	<img class="w-100" src="/assets/images/11.jpg" alt="정보처리기사 3과목 - 데이터베이스(1)" />
-	</a>
-	</div>
-
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/EIP_5-2(1)/">5과목 - 2장: IT프로젝트 정보시스템 구축 관리(1)</a>
-	</h2>
-	<p class="excerpt">
-	   네트워크 관련 신기술
-	</p>
-	<small class="d-block text-muted">
-		In <span class="catlist">
-		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
-		
-		</span>
-	</small>
-	<small class="text-muted">
-		Aug 17, 2020
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/EIP_5-2(1)/">
-	<img class="w-100" src="/assets/images/4.jpg" alt="5과목 - 2장: IT프로젝트 정보시스템 구축 관리(1)" />
 	</a>
 	</div>
 

@@ -1,4 +1,4 @@
-I"|+<!--
+I"61<!--
 타이틀 :
 -->
 
@@ -17,6 +17,66 @@
         <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
         
 
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/kbs_summary_4/">오답노트 (4)</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#한국어능력시험">한국어능력시험</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Aug 07, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/kbs_summary_4/">
+	<img class="w-100" src="/assets/images/2.jpg" alt="오답노트 (4)" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/kbs_summary_3/">오답노트 (3)</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#한국어능력시험">한국어능력시험</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Aug 04, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/kbs_summary_3/">
+	<img class="w-100" src="/assets/images/1.jpg" alt="오답노트 (3)" />
+	</a>
+	</div>
+
+</div>
+        
         
         
             <div class="mb-5 d-flex justify-content-between main-loop-card">

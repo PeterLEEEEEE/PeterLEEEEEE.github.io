@@ -1,38 +1,32 @@
 #site
 
-name: 'Blog'
-description: 'Colorful'
+name: "Wonderland"
+description: "Colorful"
 #logo: 'assets/images/logo.png'
 #favicon: 'assets/images/favicon.ico'
 #baseurl: ''
-disqus: 'peterleeeeee-github-io'
+disqus: "peterleeeeee-github-io"
 #email: 'wowthemesnet@gmail.com'
-#mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
-
 
 include: ["_pages"]
 permalink: /:title/
 
 # Plugins
-plugins: 
+plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  
-authors:
-      name: Peter
-      site: https://peterleeeeee.github.io/         
-      avatar:         
-      bio: "newbie on Computer"
-      email: dissgo12@gmail.com
-      
 
-    
- 
+authors:
+  name: Peter
+  site: https://peterleeeeee.github.io/
+  avatar:
+  bio: "newbie on Computer"
+  email: dissgo12@gmail.com
+
 # Defaults
 defaults:
-
   # all posts
   - scope:
       path: "_posts"
@@ -40,20 +34,20 @@ defaults:
       layout: post
       author: Peter
       avatar: /assets/images/avatar1.jpg
-      
+
   # all pages
   - scope:
       path: "_pages"
     values:
       layout: page
-      
+
 # Syntax
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter_opts:
     default_lang: html
-    css_class   : 'syntax'
+    css_class: "syntax"
 highlighter: rouge
 
 # Paginate
@@ -64,11 +58,17 @@ analytics:
   provider: "google-gtag"
   google:
     tracking_id: "UA-172686009-1"
-    anonymize_ip: 
+    anonymize_ip:
 
 url: https://peterleeeeee.github.io/
 
-
-
 # Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+exclude:
+  [
+    README.markdown,
+    package.json,
+    grunt.js,
+    Gruntfile.js,
+    Gruntfile.coffee,
+    node_modules,
+  ]
