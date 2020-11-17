@@ -1,4 +1,4 @@
-I"61<!--
+I"�1<!--
 타이틀 :
 -->
 
@@ -17,6 +17,36 @@
         <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
         
 
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/EIP_1-1/">1과목: 요약 정리(1) - 요구사항 확인</a>
+	</h2>
+	<p class="excerpt">
+	   소프트웨어 생명 주기
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Aug 08, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/EIP_1-1/">
+	<img class="w-100" src="/assets/images/17.jpg" alt="1과목: 요약 정리(1) - 요구사항 확인" />
+	</a>
+	</div>
+
+</div>
+        
         
         
             <div class="mb-5 d-flex justify-content-between main-loop-card">
@@ -289,36 +319,6 @@
         
         
         
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/Test-Hello-Word/">Hello World!</a>
-	</h2>
-	<p class="excerpt">
-	   Hello World
-	</p>
-	<small class="d-block text-muted">
-		In <span class="catlist">
-		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#test">Test</a><span class="sep">, </span>
-		
-		</span>
-	</small>
-	<small class="text-muted">
-		Jul 05, 2020
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/Test-Hello-Word/">
-	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/86528643-00e4bc00-bee5-11ea-8d93-e60288a53016.jpg" alt="Hello World!" />
-	</a>
-	</div>
-
-</div>
-        
-        
-        
         <div class="mt-5">
          <!-- Pagination links -->
             
@@ -340,9 +340,13 @@
                 <li class="page-item disabled"><span class="webjeda page-link">3</span></li>
                 
               
+                
+                <li class="page-item"><a class="page-link" href="/page4">4</a></li>
+                
+              
 
               
-                <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>
+                <li class="page-item"><a class="page-link" href="/page4">Next &raquo;</a></li>
               
             </ul>
                   

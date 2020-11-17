@@ -1,4 +1,4 @@
-I"�L<!--
+I"�L<!--
 타이틀 :
 -->
 
@@ -15,26 +15,26 @@
     
     <div class="col-md-6">
     <div class="card border-0 mb-4 box-shadow">   
-    <a href="/Attention/">
-    <div class="topfirstimage" style="background-image: url(https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
+    <a href="/CIFAR10/">
+    <div class="topfirstimage" style="background-image: url( /); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
     </a>
     <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
     <h2 class="h4 font-weight-bold">
-    <a class="text-dark" href="/Attention/">Transformer를 공부하기 위해 얻은 지식들</a>
+    <a class="text-dark" href="/CIFAR10/">딥러닝 용어들에 대한 정리</a>
     </h2>
     <p class="excerpt">
-        
+        Loss란 정답과 예측값 간의 차이 –&gt; 목적은 예측값이 정답과 같게 되는 것 즉 Loss를 0으로 만드는게 궁극적 목표.
     </p>
     <div>
         <small class="d-block text-muted">
             In <span class="catlist">
                 
-                <a class="text-capitalize text-muted smoothscroll" href="/categories.html#nlp">NLP</a><span class="sep">, </span>
+                <a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
                 
                 </span>                   
         </small>
         <small class="text-muted">
-            Nov 10, 2020
+            Nov 16, 2020
         </small>
     </div>
     </div>
@@ -46,14 +46,39 @@
         <!-- second latest post --><div class="mb-3 d-flex align-items-center">                
                 
                 <div class="col-md-4">
-                <a href="/Using_python_6-copy/">
+                <a href="/Attention/">
+                 <img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="Transformer를 공부하기 위해 얻은 지식들" />
+                </a>
+                </div>
+                                
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="/Attention/">Transformer를 공부하기 위해 얻은 지식들</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                        
+                        <a class="text-capitalize text-muted smoothscroll" href="/categories.html#nlp">NLP</a><span class="sep">, </span>
+                        
+                        </span>                   
+                    </small>
+                    <small class="text-muted">
+                        Nov 10, 2020
+                    </small>
+                </div>
+            </div>
+        
+        <!-- third latest post --><div class="mb-3 d-flex align-items-center">                
+                
+                <div class="col-md-4">
+                <a href="/Using_python_6/">
                  <img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter" />
                 </a>
                 </div>
                                 
                 <div>
                     <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="/Using_python_6-copy/">파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter</a>
+                    <a class="text-dark" href="/Using_python_6/">파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter</a>
                     </h2>
                     <small class="d-block text-muted">
                         In <span class="catlist">
@@ -68,11 +93,11 @@
                 </div>
             </div>
         
-        <!-- third latest post --><div class="mb-3 d-flex align-items-center">                
+        <!-- fourth latest post --><div class="mb-3 d-flex align-items-center">                
                 
                 <div class="col-md-4">
                 <a href="/Using_python_5/">
-                 <img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="파이썬에서 유용한 기능 정리(1) - enumerate, zip, randint" />
+                <img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="파이썬에서 유용한 기능 정리(1) - enumerate, zip, randint" />
                 </a>
                 </div>
                                 
@@ -93,36 +118,13 @@
                 </div>
             </div>
         
-        <!-- fourth latest post --><div class="mb-3 d-flex align-items-center">                
-                
-                <div class="col-md-4">
-                <a href="/DiveintoData_1_MNIST/">
-                <img class="w-100" src="https://user-images.githubusercontent.com/52132160/91169688-b88e9100-e712-11ea-9bf5-2e45542d41c6.png" alt="월간 데이콘7 - 글자에 숨겨진 숫자 이미지 예측(MNIST)" />
-                </a>
-                </div>
-                                
-                <div>
-                    <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="/DiveintoData_1_MNIST/">월간 데이콘7 - 글자에 숨겨진 숫자 이미지 예측(MNIST)</a>
-                    </h2>
-                    <small class="d-block text-muted">
-                        In <span class="catlist">
-                        
-                        <a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
-                        
-                        </span>                   
-                    </small>
-                    <small class="text-muted">
-                        Aug 28, 2020
-                    </small>
-                </div>
-            </div>
-        
     </div>
     
 </div>
     
 <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
+ 
+
  
 
  
@@ -223,6 +225,30 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/CIFAR10/">딥러닝 용어들에 대한 정리</a>
+	</h2>
+	<p class="excerpt">
+	   Loss란 정답과 예측값 간의 차이 –&gt; 목적은 예측값이 정답과 같게 되는 것 즉 Loss를 0으로 만드는게 궁극적 목표.
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Nov 16, 2020
+	</small>
+</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
 	<a class="text-dark" href="/Attention/">Transformer를 공부하기 위해 얻은 지식들</a>
 	</h2>
 	<p class="excerpt">
@@ -253,7 +279,7 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/Using_python_6-copy/">파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter</a>
+	<a class="text-dark" href="/Using_python_6/">파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter</a>
 	</h2>
 	<p class="excerpt">
 	   
@@ -271,7 +297,7 @@
 </div>
 
 	<div class="col-md-3 pr-0 text-right">
-	<a href="/Using_python_6-copy/">
+	<a href="/Using_python_6/">
 	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter" />
 	</a>
 	</div>
@@ -490,36 +516,6 @@
         
         
         
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/Dacon_1_MNIST/">코랩을 이용한 MNIST 핸들링(1)</a>
-	</h2>
-	<p class="excerpt">
-	   
-	</p>
-	<small class="d-block text-muted">
-		In <span class="catlist">
-		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#data handling">Data Handling</a><span class="sep">, </span>
-		
-		</span>
-	</small>
-	<small class="text-muted">
-		Aug 24, 2020
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/Dacon_1_MNIST/">
-	<img class="w-100" src="/assets/images/11.jpg" alt="코랩을 이용한 MNIST 핸들링(1)" />
-	</a>
-	</div>
-
-</div>
-        
-        
-        
         <div class="mt-5">
          <!-- Pagination links -->
             
@@ -539,6 +535,10 @@
               
                 
                 <li class="page-item"><a class="page-link" href="/page3">3</a></li>
+                
+              
+                
+                <li class="page-item"><a class="page-link" href="/page4">4</a></li>
                 
               
 

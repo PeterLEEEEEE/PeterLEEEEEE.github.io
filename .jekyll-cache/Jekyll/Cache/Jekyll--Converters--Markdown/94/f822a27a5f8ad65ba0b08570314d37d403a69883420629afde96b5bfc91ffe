@@ -1,0 +1,176 @@
+I"�<!--
+타이틀 :
+-->
+
+<div class="container">
+    
+ <!--endif page url is / -->
+    
+
+
+<!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
+    
+<div class="row mt-3">
+   
+    <div class="col-md-8 main-loop">
+        
+        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+        
+
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Test-Hello-Word/">Hello World!</a>
+	</h2>
+	<p class="excerpt">
+	   Hello World
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#test">Test</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Jul 05, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Test-Hello-Word/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/86528643-00e4bc00-bee5-11ea-8d93-e60288a53016.jpg" alt="Hello World!" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+        <div class="mt-5">
+         <!-- Pagination links -->
+            
+            <ul class="pagination"> 
+              
+                <li class="page-item"><a class="page-link" href="/page3">&laquo; Prev</a></li>
+              
+
+              
+                
+                <li class="page-item"><a class="page-link" href="/">1</a></li>
+                
+              
+                
+                <li class="page-item"><a class="page-link" href="/page2">2</a></li>
+                
+              
+                
+                <li class="page-item"><a class="page-link" href="/page3">3</a></li>
+                
+              
+                
+                <li class="page-item disabled"><span class="webjeda page-link">4</span></li>
+                
+              
+
+              
+                <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>
+              
+            </ul>
+                  
+        </div>
+        
+    </div>
+    
+    <div class="col-md-4">
+        <div class="sticky-top sticky-top-offset">
+    <h4 class="font-weight-bold spanborder"><span>Featured</span></h4>  
+    <ol class="list-featured">				
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_2-2/" class="text-dark">2과목: 요약 정리(2) - 제품 소프트웨어 패키징</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_2-1/" class="text-dark">2과목: 요약 정리(1) - 데이터 입출력 구현</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_1-3/" class="text-dark">1과목: 요약 정리(1) - 애플리케이션 설계</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_1-2/" class="text-dark">1과목: 요약 정리(2) - 화면 설계</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_1-1/" class="text-dark">1과목: 요약 정리(1) - 요구사항 확인</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+           
+    </ol>
+</div>     
+    </div>
+    
+</div>
+
+
+
+</div>
+:ET

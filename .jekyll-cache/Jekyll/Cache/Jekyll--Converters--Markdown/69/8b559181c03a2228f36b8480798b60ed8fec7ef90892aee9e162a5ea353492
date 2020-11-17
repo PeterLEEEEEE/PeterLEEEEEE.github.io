@@ -1,4 +1,4 @@
-I"[5<!--
+I"�5<!--
 타이틀 :
 -->
 
@@ -17,6 +17,36 @@
         <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
         
 
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Dacon_1_MNIST/">코랩을 이용한 MNIST 핸들링(1)</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#data handling">Data Handling</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Aug 24, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Dacon_1_MNIST/">
+	<img class="w-100" src="/assets/images/11.jpg" alt="코랩을 이용한 MNIST 핸들링(1)" />
+	</a>
+	</div>
+
+</div>
+        
         
         
             <div class="mb-5 d-flex justify-content-between main-loop-card">
@@ -289,36 +319,6 @@
         
         
         
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/EIP_1-1/">1과목: 요약 정리(1) - 요구사항 확인</a>
-	</h2>
-	<p class="excerpt">
-	   소프트웨어 생명 주기
-	</p>
-	<small class="d-block text-muted">
-		In <span class="catlist">
-		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
-		
-		</span>
-	</small>
-	<small class="text-muted">
-		Aug 08, 2020
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/EIP_1-1/">
-	<img class="w-100" src="/assets/images/17.jpg" alt="1과목: 요약 정리(1) - 요구사항 확인" />
-	</a>
-	</div>
-
-</div>
-        
-        
-        
         <div class="mt-5">
          <!-- Pagination links -->
             
@@ -338,6 +338,10 @@
               
                 
                 <li class="page-item"><a class="page-link" href="/page3">3</a></li>
+                
+              
+                
+                <li class="page-item"><a class="page-link" href="/page4">4</a></li>
                 
               
 

@@ -1,4 +1,4 @@
-I"z<div class="container">
+I"}<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
         <h1 class="font-weight-bold title h6 text-uppercase mb-4">Categories</h1>
@@ -780,7 +780,7 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/Using_python_6-copy/">파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter</a>
+	<a class="text-dark" href="/Using_python_6/">파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter</a>
 	</h2>
 	<p class="excerpt">
 	   
@@ -798,7 +798,7 @@
 </div>
 
 	<div class="col-md-3 pr-0 text-right">
-	<a href="/Using_python_6-copy/">
+	<a href="/Using_python_6/">
 	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter" />
 	</a>
 	</div>
@@ -978,6 +978,33 @@
          
         <h4 class="font-weight-bold spanborder text-capitalize" id="deep learning"><span>Deep Learning</span></h4>
             
+        
+        
+        
+          
+         
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/CIFAR10/">딥러닝 용어들에 대한 정리</a>
+	</h2>
+	<p class="excerpt">
+	   Loss란 정답과 예측값 간의 차이 –&gt; 목적은 예측값이 정답과 같게 되는 것 즉 Loss를 0으로 만드는게 궁극적 목표.
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Nov 16, 2020
+	</small>
+</div>
+
+</div>
+          
         
         
         
