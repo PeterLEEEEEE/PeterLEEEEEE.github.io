@@ -1,32 +1,29 @@
----
-layout: post
-title: "딥러닝 용어들에 대한 정리"
-author: Peter
-categories: [Deep Learning]
-image: https://user-images.githubusercontent.com/52132160/99202726-7053ac00-27f3-11eb-8ce4-2c3be45146c2.png
+I"�<hr />
 
-sitemap:
-changefreq: daily
-priority: 1.0
----
+<h3 id="cifar-10">CIFAR-10</h3>
 
----
+<p>
+CIFAR-10은 32x32 픽셀 사이즈의 RGB를 가진 이미지들의 데이터 셋으로 종 10가지 종류 6만장의 이미지로 이루어진 데이터 셋이다.
 
-Loss란 정답과 예측값 간의 차이 --> 목적은 예측값이 정답과 같게 되는 것 즉 Loss를 0으로 만드는게 궁극적 목표.
+</p>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/99909503-3d964000-2d2c-11eb-9c79-b261c7f2fdb9.png" alt="image" /></p>
+
+<h5>출처: https://www.cs.toronto.edu/~kriz/cifar.html<h5>
 
 ### objective function(optimal하게 만들고 싶은 목적이 되는 함수), cost function, loss function
 
-(상위 개념)objective function >= cost function >= loss function
+(상위 개념)objective function &gt;= cost function &gt;= loss function
 
 ### Mean Square Error(평균제곱오차)
 
 <p>
 (예측값 - 정답)에 제곱을 해준 값을 에러 값으로 판단하는 방식. 
-<br>
-<br>
+<br />
+<br />
 
 </p>
-<hr>
+<hr />
 
 ### Cost function
 
@@ -62,3 +59,5 @@ loss function는 목적에 따라 다르게 선택된다.(classification인지 r
 ### Regression
 
 "Regression toward the mean" 즉 평균으로 되돌아간다는 의미의 함축이 Regression이라 할 수 있다.
+</h5></h5>
+:ET

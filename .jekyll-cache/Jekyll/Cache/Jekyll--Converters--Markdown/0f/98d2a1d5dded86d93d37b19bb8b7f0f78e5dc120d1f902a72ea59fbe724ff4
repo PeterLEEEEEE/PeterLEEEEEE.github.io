@@ -1,0 +1,38 @@
+I"�<hr />
+
+<h3 id="cifar-10">CIFAR-10</h3>
+
+<p>
+CIFAR-10은 32x32 픽셀 사이즈의 RGB를 가진 이미지들의 데이터 셋으로 종 10가지 종류 6만장의 이미지로 이루어진 데이터 셋이다.
+
+</p>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/99909503-3d964000-2d2c-11eb-9c79-b261c7f2fdb9.png" alt="image" /></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>    source: https://www.cs.toronto.edu/~kriz/cifar.html
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="데이터-전처리">데이터 전처리</h3>
+
+<p>
+전처리에 앞서 필자는 colab을 사용한다. 노트북 밖에 없고 데스크탑 사양이 좋지 않은 필자 같은 분들은 colab을 사용하는 것을 권장한다.(ipynb 환경이라 다운도 편하고 노트북 용량도 차지하지 않으니 좋다)
+
+우선 데이터를 다운 받는 것이 제일 먼저다.
+
+</p>
+
+<!-- {% highlight python%} -->
+
+<p>’'’python
+from keras.datasets import cifar10
+import numpy as np
+import matplotlib.pyplot as plt
+from keras.utils.np_utils import to_categorical
+import tensorflow as tf
+import keras
+‘’’</p>
+
+<!-- {% endhighlight %} -->
+:ET

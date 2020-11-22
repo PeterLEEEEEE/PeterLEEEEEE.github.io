@@ -1,34 +1,31 @@
----
-layout: post
-title: "딥러닝 용어들에 대한 정리"
-author: Peter
-categories: [Deep Learning]
-image: https://user-images.githubusercontent.com/52132160/99202726-7053ac00-27f3-11eb-8ce4-2c3be45146c2.png
+I"�<hr />
 
-sitemap:
-changefreq: daily
-priority: 1.0
----
+<h3 id="cifar-10">CIFAR-10</h3>
 
----
+<p>
+CIFAR-10은 32x32 픽셀 사이즈의 RGB를 가진 이미지들의 데이터 셋으로 종 10가지 종류 6만장의 이미지로 이루어진 데이터 셋이다.
 
-Loss란 정답과 예측값 간의 차이 --> 목적은 예측값이 정답과 같게 되는 것 즉 Loss를 0으로 만드는게 궁극적 목표.
+</p>
 
-### objective function(optimal하게 만들고 싶은 목적이 되는 함수), cost function, loss function
+<p><img src="https://user-images.githubusercontent.com/52132160/99909503-3d964000-2d2c-11eb-9c79-b261c7f2fdb9.png" alt="image" /></p>
 
-(상위 개념)objective function >= cost function >= loss function
+<h7>출처: https://www.cs.toronto.edu/~kriz/cifar.html</h7>
 
-### Mean Square Error(평균제곱오차)
+<h3 id="objective-functionoptimal하게-만들고-싶은-목적이-되는-함수-cost-function-loss-function">objective function(optimal하게 만들고 싶은 목적이 되는 함수), cost function, loss function</h3>
+
+<p>(상위 개념)objective function &gt;= cost function &gt;= loss function</p>
+
+<h3 id="mean-square-error평균제곱오차">Mean Square Error(평균제곱오차)</h3>
 
 <p>
 (예측값 - 정답)에 제곱을 해준 값을 에러 값으로 판단하는 방식. 
-<br>
-<br>
+<br />
+<br />
 
 </p>
-<hr>
+<hr />
 
-### Cost function
+<h3 id="cost-function">Cost function</h3>
 
 <p>
 
@@ -47,9 +44,9 @@ Cross entropy 값은 실제값과 예측값이 같을 경우 0으로 수렴하�
 
 </p>
 
----
+<hr />
 
-### loss function
+<h3 id="loss-function">loss function</h3>
 
 <p>
 loss function은 한 데이터 포인트에서 예측-실제 값의 차이 = loss 를 표현한 함수.(여러 종류의 함수가 존재한다)
@@ -57,8 +54,9 @@ loss function은 파라미터 최적화(cost를 0으로 만들기 위한)를 위
 loss function는 목적에 따라 다르게 선택된다.(classification인지 regression인지)
 </p>
 
----
+<hr />
 
-### Regression
+<h3 id="regression">Regression</h3>
 
-"Regression toward the mean" 즉 평균으로 되돌아간다는 의미의 함축이 Regression이라 할 수 있다.
+<p>“Regression toward the mean” 즉 평균으로 되돌아간다는 의미의 함축이 Regression이라 할 수 있다.</p>
+:ET
