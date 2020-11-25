@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Cross Entropy와 그 종류들"
+title: "Entropy와 Cross Entropy"
 author: Peter
 categories: [Deep Learning]
-image: https://user-images.githubusercontent.com/52132160/99202726-7053ac00-27f3-11eb-8ce4-2c3be45146c2.png
+image: (https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png)
 
 sitemap:
 changefreq: daily
