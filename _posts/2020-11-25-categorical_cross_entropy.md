@@ -3,7 +3,7 @@ layout: post
 title: "Entropy와 Cross Entropy"
 author: Peter
 categories: [Deep Learning]
-image: (https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png)
+image: https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png
 
 sitemap:
 changefreq: daily
