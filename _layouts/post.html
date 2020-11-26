@@ -60,10 +60,6 @@ layout: default
   </div>
 </div>
 
-<script
-  type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
-></script>
 
 <div class="container-lg pt-4 pb-4">
 <!-- 링크 버튼 비활성화(twitter, facebook)
@@ -88,7 +84,11 @@ layout: default
     <div>
       <!-- Article -->
       <article class="article-post">{{ content }}</article>
-
+      <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+        </script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/math...">
+        </script>
       <!-- Tags -->
       <div class="mb-4">
         <span class="taglist">
