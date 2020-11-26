@@ -1,4 +1,4 @@
-I"Ċ<div class="container">
+I"P�<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
         <h1 class="font-weight-bold title h6 text-uppercase mb-4">Categories</h1>
@@ -989,7 +989,7 @@
 	<a class="text-dark" href="/categorical_cross_entropy/">Cross Entropy의 종류들(sparse cross entropy, binary cross entropy)</a>
 	</h2>
 	<p class="excerpt">
-	   정말 간단하게 수식없이 어느 상황에서 loss function을 사용해야할 지 적어보도록 하겠다.
+	   
 	</p>
 	<small class="d-block text-muted">
 		In <span class="catlist">

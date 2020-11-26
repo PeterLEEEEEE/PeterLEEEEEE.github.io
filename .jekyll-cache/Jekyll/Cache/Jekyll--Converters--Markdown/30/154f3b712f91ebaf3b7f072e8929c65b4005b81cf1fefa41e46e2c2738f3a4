@@ -1,4 +1,4 @@
-I"�M<!--
+I":J<!--
 타이틀 :
 -->
 
@@ -15,26 +15,24 @@
     
     <div class="col-md-6">
     <div class="card border-0 mb-4 box-shadow">   
-    <a href="/categorical_cross_entropy/">
-    <div class="topfirstimage" style="background-image: url(https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
+    <a href="/2020-11-25-entropy/">
+    <div class="topfirstimage" style="background-image: url( /); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
     </a>
     <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
     <h2 class="h4 font-weight-bold">
-    <a class="text-dark" href="/categorical_cross_entropy/">Cross Entropy의 종류들(sparse cross entropy, binary cross entropy)</a>
+    <a class="text-dark" href="/2020-11-25-entropy/"></a>
     </h2>
     <p class="excerpt">
-        정말 간단하게 수식없이 어느 상황에서 loss function을 사용해야할 지 적어보도록 하겠다.
+        
     </p>
     <div>
         <small class="d-block text-muted">
             In <span class="catlist">
                 
-                <a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
-                
                 </span>                   
         </small>
         <small class="text-muted">
-            Nov 26, 2020
+            Nov 27, 2020
         </small>
     </div>
     </div>
@@ -46,14 +44,14 @@
         <!-- second latest post --><div class="mb-3 d-flex align-items-center">                
                 
                 <div class="col-md-4">
-                <a href="/entropy/">
-                 <img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Entropy와 Cross Entropy" />
+                <a href="/categorical_cross_entropy/">
+                 <img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Cross Entropy의 종류들(sparse cross entropy, binary cross entropy)" />
                 </a>
                 </div>
                                 
                 <div>
                     <h2 class="mb-2 h6 font-weight-bold">
-                    <a class="text-dark" href="/entropy/">Entropy와 Cross Entropy</a>
+                    <a class="text-dark" href="/categorical_cross_entropy/">Cross Entropy의 종류들(sparse cross entropy, binary cross entropy)</a>
                     </h2>
                     <small class="d-block text-muted">
                         In <span class="catlist">
@@ -63,7 +61,7 @@
                         </span>                   
                     </small>
                     <small class="text-muted">
-                        Nov 25, 2020
+                        Nov 26, 2020
                     </small>
                 </div>
             </div>
@@ -233,10 +231,32 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/2020-11-25-entropy/"></a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Nov 27, 2020
+	</small>
+</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
 	<a class="text-dark" href="/categorical_cross_entropy/">Cross Entropy의 종류들(sparse cross entropy, binary cross entropy)</a>
 	</h2>
 	<p class="excerpt">
-	   정말 간단하게 수식없이 어느 상황에서 loss function을 사용해야할 지 적어보도록 하겠다.
+	   
 	</p>
 	<small class="d-block text-muted">
 		In <span class="catlist">
@@ -253,36 +273,6 @@
 	<div class="col-md-3 pr-0 text-right">
 	<a href="/categorical_cross_entropy/">
 	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Cross Entropy의 종류들(sparse cross entropy, binary cross entropy)" />
-	</a>
-	</div>
-
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/entropy/">Entropy와 Cross Entropy</a>
-	</h2>
-	<p class="excerpt">
-	   
-	</p>
-	<small class="d-block text-muted">
-		In <span class="catlist">
-		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
-		
-		</span>
-	</small>
-	<small class="text-muted">
-		Nov 25, 2020
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/entropy/">
-	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Entropy와 Cross Entropy" />
 	</a>
 	</div>
 

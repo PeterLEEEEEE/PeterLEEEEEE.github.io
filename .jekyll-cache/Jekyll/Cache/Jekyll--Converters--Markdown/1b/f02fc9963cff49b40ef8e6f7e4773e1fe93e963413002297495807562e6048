@@ -1,4 +1,4 @@
-I"e2<div class="container">
+I"35<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
         <h1 class="font-weight-bold title h6 text-uppercase mb-4">Tags</h1>
@@ -338,7 +338,7 @@
 	<a class="text-dark" href="/categorical_cross_entropy/">Cross Entropy의 종류들(sparse cross entropy, binary cross entropy)</a>
 	</h2>
 	<p class="excerpt">
-	   정말 간단하게 수식없이 어느 상황에서 loss function을 사용해야할 지 적어보도록 하겠다.
+	   
 	</p>
 	<small class="d-block text-muted">
 		In <span class="catlist">
@@ -355,6 +355,39 @@
 	<div class="col-md-3 pr-0 text-right">
 	<a href="/categorical_cross_entropy/">
 	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Cross Entropy의 종류들(sparse cross entropy, binary cross entropy)" />
+	</a>
+	</div>
+
+</div>
+          
+        
+        
+        
+          
+         
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/entropy/">Entropy와 Cross Entropy</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Nov 25, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/entropy/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Entropy와 Cross Entropy" />
 	</a>
 	</div>
 

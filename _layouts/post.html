@@ -80,7 +80,18 @@ layout: default
         </div>
       </div>
     </div>
--->
+--><!-- Tags -->
+<div class="mb-4">
+  <span class="taglist">
+    {% for tag in page.tags %}
+    <a
+      class="sscroll btn btn-light btn-sm font-weight-bold"
+      href="{{site.baseurl}}/tags.html#{{ tag | downcase }}"
+      >{{ tag | downcase }}</a
+    >
+    {% endfor %}
+  </span>
+</div>
     <div>
       <!-- Article -->
       <article class="article-post">
@@ -92,18 +103,7 @@ layout: default
         {{ content }}
       </article>
       
-      <!-- Tags -->
-      <div class="mb-4">
-        <span class="taglist">
-          {% for tag in page.tags %}
-          <a
-            class="sscroll btn btn-light btn-sm font-weight-bold"
-            href="{{site.baseurl}}/tags.html#{{ tag | downcase }}"
-            >{{ tag | downcase }}</a
-          >
-          {% endfor %}
-        </span>
-      </div>
+      
 
       <!-- Mailchimp Subscribe Form -->
       {% if site.mailchimp-list %}
