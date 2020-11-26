@@ -83,12 +83,12 @@ layout: default
 -->
     <div>
       <!-- Article -->
-      <article class="article-post">{{ content }}</article>
-      <script type="text/x-mathjax-config">
+      <article class="article-post"><script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
         </script>
         <script type="text/javascript" src="http://cdn.mathjax.org/math...">
-        </script>
+        </script>{{ content }}</article>
+      
       <!-- Tags -->
       <div class="mb-4">
         <span class="taglist">
