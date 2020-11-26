@@ -1,0 +1,232 @@
+I"W<hr />
+
+<h3 id="스택의-개념">스택의 개념</h3>
+
+<ul>
+  <li>
+    <p>한 쪽이 막힌 바구니의 형태다.</p>
+  </li>
+  <li>
+    <p>넣은 데이터는 아래쪽에 쌓인다.</p>
+  </li>
+  <li>
+    <p>후입선출(LIFO:Last in first out): 가장 최근에 들어온 데이터가 가장 먼저 나간다.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="스택과-큐">스택과 큐</h3>
+
+<ul>
+  <li>배열/리스트 vs 스택/큐
+    <ul>
+      <li>공통점: <u>선형 구조</u> 이다.</li>
+      <li>차이점: 삽입과 삭제의 위치 고정 여부
+        <ul>
+          <li>배열/리스트: 임의의 위치에서 삽입/삭제</li>
+          <li>스택: 맨 위(top)</li>
+          <li>큐:
+            <ul>
+              <li>삽입: 맨 앞(front)</li>
+              <li>삭제: 맨 뒤(rear)</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="스택의-구현">스택의 구현</h3>
+
+<ul>
+  <li>
+    <p>배열을 이용한 구현
+{% highlight cpp %}
+typedef struct Stack{
+int top;
+int arr[STACK];
+}ArrayStack;
+{% endhighlight %}</p>
+  </li>
+  <li>
+    <p>연결 자료구조(연결 리스트)를 이용한 구현
+{% highlight cpp %}
+typedef struct StackNode{
+int data; // 넣어줄 데이터
+struct Node* next; // 연결을 위한 자기참조 포인터
+}Node;</p>
+  </li>
+</ul>
+
+<p>typedef struct LinkedStack{
+Node* top; // top 표시
+}Node;
+{% endhighlight %}</p>
+
+<hr />
+
+<hr />
+
+<h4 id="배열-스택의-구현cpp">배열 스택의 구현.cpp</h4>
+
+<p>{% highlight cpp %}
+#define MAX_STACK_SIZE 50
+#define True 1
+#define False 0</p>
+
+<p>typedef int Bool;
+typedef int Element;</p>
+
+<p>typedef struct {
+Element stackArr[MAX_STACK_SIZE];
+int top;
+} Stack;</p>
+
+<p>// 스택 생성
+Stack *Create(void) {
+Stack *tempstack;
+tempstack = malloc(sizeof(Stack));
+tempstack-&gt;top = -1; // 맨 아래에 있음
+return tempstack;
+}</p>
+
+<p>// 스택이 비었는 지 확인
+Bool isEmpty(Stack *pstack)
+{
+if (pstack-&gt;top == -1)
+return True;
+else return False;
+}</p>
+
+<p>// 스택이 포화 상태인가
+Bool isFull(Stack *pstack)
+{
+if (pstack-&gt;top == MAX_STACK_SIZE-1) // top은 -1부터 시작하기 때문에
+return True;
+else
+return False;
+}</p>
+
+<p>// 스택에 삽입
+void Push(Stack *pstack, Element Data)
+{
+if(isFull(pstack)){
+printf(“Stack Overflow. \n”);
+exit(-1);
+}
+pstack-&gt;top += 1;
+pstack-&gt;stackArr[pstack-&gt;top] = Data;
+}</p>
+
+<p>//스택에서 삭제
+Element Pop(Stack *pstack)
+{
+if(isEmpty(pstack)){
+printf(“Stack underflow. \n”);
+exit(-1);
+}
+return pstack-&gt;stackArr[pstack-&gt;top–];
+}</p>
+
+<p>// 마지막에 무엇이 있는지 확인
+Element peek(){
+if(isEmpty(pstack)){
+printf(“ERROR”);
+exit(-1);
+}
+return pstack-&gt;stackArr[pstack-&gt;top];
+}</p>
+
+<p>int main( ) {
+Stack *pstack;
+int a;
+pstack = Create();
+Push(pstack, 1);
+a = Pop(pstack);
+printf(“%d\n”, a);
+return 0;
+}
+{% endhighlight %}</p>
+
+<ul>
+  <li>배열로 구현한 스택의 장단점
+    <ul>
+      <li>장점: 쉽게 구현 가능하다</li>
+      <li>단점:
+        <ul>
+          <li>스택의 크기 변경이 어렵다</li>
+          <li>순차 자료구조의 단점을 가진다.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h4 id="연결리스트-스택의-구현cpp">연결리스트 스택의 구현.cpp</h4>
+
+<p>{% highlight cpp %}
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h></string.h></stdlib.h></stdio.h></p>
+
+<p>typedef int element;</p>
+
+<p>typedef struct stackNode{
+element data;
+struct stackNodeType* link;
+}stackNode;</p>
+
+<p>typedef struct LinkedStackType{
+stackNode* top;
+}LinkedStack;</p>
+
+<p>type LinkedStack Stack;</p>
+
+<p>void StackInit(Stack* pstack){
+pstack-&gt;top = NULL;
+}</p>
+
+<p>element isEmpty(Stack* pstack){
+if(pstack-&gt;top == NULL)
+return 1;
+return 0;
+}</p>
+
+<p>void push(Stack* pstack, element item){
+stackNode* newNode = (stackNode*)malloc(sizeof(stackNode));
+newNode-&gt;data = data;
+newNode-&gt;link = pstack-&gt;top;
+pstack-&gt;top = newNode;
+}</p>
+
+<p>element pop(Stack* pstack){
+element rdata;
+stackNode* rnode;
+if(isEmpty(pstack)){
+printf(“\n\n Stack is empty!\n”);
+exit(-1);
+}
+else{
+rdata = pstack-&gt;top-&gt;data;
+rnode = pstack-&gt;top;
+pstack-&gt;top = pstack-&gt;top-&gt;link;
+free(rnode);
+return rdata;
+}
+}</p>
+
+<p>elememt peek(Stack* pstack){
+if(isEmpty(pstack)){
+printf(“\n\n Stack is empty! \n”);
+exit(-1);
+}
+return pstack-&gt;top-&gt;data;
+}
+{% endhighlight %}</p>
+:ET
