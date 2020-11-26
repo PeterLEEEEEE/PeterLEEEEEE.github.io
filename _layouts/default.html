@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>hi there</title>
 <!--    {{page.title}} | {{site.name}}-->
-
+{% if page.use_math %}
+  {% include mathjax-support.html %}
+{% endif %}
     {% seo %}
 
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
