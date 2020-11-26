@@ -8,6 +8,7 @@ image: https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2
 sitemap:
 changefreq: daily
 priority: 1.0
+comments: true
 ---
 
 ---

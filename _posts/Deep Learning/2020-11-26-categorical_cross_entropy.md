@@ -9,7 +9,7 @@ tags: [Deep Learning]
 sitemap:
 changefreq: daily
 priority: 1.0
-
+comments: true
 use_math: true
 ---
 

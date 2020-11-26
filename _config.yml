@@ -41,6 +41,11 @@ defaults:
     values:
       layout: page
 
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "peter"
+
 # Syntax
 markdown: kramdown
 kramdown:

@@ -59,7 +59,11 @@ layout: default
     </div>
   </div>
 </div>
-
+  <div style="text-align: center;">
+	<a href="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}/{{ page.url | remove_first: '/' | replace: '/', '-' }}" target="_blank">
+	  <img src="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}/{{ page.url | remove_first: '/' | replace: '/', '-' }}.svg" />
+	</a>
+  </div> 
 
 <div class="container-lg pt-4 pb-4">
 <!-- 링크 버튼 비활성화(twitter, facebook)
@@ -80,7 +84,9 @@ layout: default
         </div>
       </div>
     </div>
---><!-- Tags -->
+-->
+
+<!-- Tags -->
 <div class="mb-4">
   <span class="taglist">
     {% for tag in page.tags %}
@@ -92,7 +98,9 @@ layout: default
     {% endfor %}
   </span>
 </div>
+
     <div>
+      
       <!-- Article -->
       <article class="article-post">
         <script type="text/x-mathjax-config">
@@ -163,6 +171,7 @@ layout: default
           />
           {% endif %}
         </div>
+        
         <div class="col-md-10">
           <h5 class="font-weight-bold">
             Written by {{ author.name }} {% if author.twitter %}<span
