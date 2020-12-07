@@ -1,0 +1,665 @@
+I"�J<!--
+타이틀 :
+-->
+
+<div class="container">
+    
+
+    
+    
+    
+<!-- Begin post excerpts, let's highlight the first 4 posts on top -->
+<div class="row remove-site-content-margin">
+    
+    <!-- latest post -->
+    
+    <div class="col-md-6">
+    <div class="card border-0 mb-4 box-shadow">   
+    <a href="/overfitting/">
+    <div class="topfirstimage" style="background-image: url(https://user-images.githubusercontent.com/52132160/101383684-c9979280-38fc-11eb-89a8-d06689c97408.png); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
+    </a>
+    <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+    <h2 class="h4 font-weight-bold">
+    <a class="text-dark" href="/overfitting/">overfitting(과적합) 문제</a>
+    </h2>
+    <p class="excerpt">
+        
+    </p>
+    <div>
+        <small class="d-block text-muted">
+            In <span class="catlist">
+                
+                <a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+                
+                </span>                   
+        </small>
+        <small class="text-muted">
+            Dec 08, 2020
+        </small>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-6">
+        
+        <!-- second latest post --><div class="mb-3 d-flex align-items-center">                
+                
+                <div class="col-md-4">
+                <a href="/WhatsResnet/">
+                 <img class="w-100" src="https://user-images.githubusercontent.com/52132160/101280874-0e450000-380f-11eb-960d-b70d27b2908c.png" alt="VGG? ResNet?" />
+                </a>
+                </div>
+                                
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="/WhatsResnet/">VGG? ResNet?</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                        
+                        <a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+                        
+                        </span>                   
+                    </small>
+                    <small class="text-muted">
+                        Dec 06, 2020
+                    </small>
+                </div>
+            </div>
+        
+        <!-- third latest post --><div class="mb-3 d-flex align-items-center">                
+                
+                <div class="col-md-4">
+                <a href="/Virtual_Machine/">
+                 <img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Flask 시작하기(1) - 가상환경" />
+                </a>
+                </div>
+                                
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="/Virtual_Machine/">Flask 시작하기(1) - 가상환경</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                        
+                        <a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">python</a><span class="sep">, </span>
+                        
+                        </span>                   
+                    </small>
+                    <small class="text-muted">
+                        Dec 05, 2020
+                    </small>
+                </div>
+            </div>
+        
+        <!-- fourth latest post --><div class="mb-3 d-flex align-items-center">                
+                
+                <div class="col-md-4">
+                <a href="/Transfer_Learning/">
+                <img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Transfer Learning" />
+                </a>
+                </div>
+                                
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="/Transfer_Learning/">Transfer Learning</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                        
+                        <a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+                        
+                        </span>                   
+                    </small>
+                    <small class="text-muted">
+                        Dec 01, 2020
+                    </small>
+                </div>
+            </div>
+        
+    </div>
+    
+</div>
+    
+<!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
+    <div class="pl-4 pr-0 h-100 tofront">
+        <div class="row justify-content-between">
+            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
+                <h1 class="mb-3">자료구조</h1>
+                <p class="mb-3 lead">
+                    
+                </p>
+                <a href="/Data_Structure_1/" class="btn btn-dark">Read More</a>
+            </div>
+            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url(/assets/images/home.jpg);">	
+            </div>
+        </div>
+    </div>
+</div> 
+
+ 
+
+
+
+
+    
+
+
+ <!--endif page url is / -->
+    
+
+
+<!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
+    
+<div class="row mt-3">
+   
+    <div class="col-md-8 main-loop">
+        
+        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+        
+
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/overfitting/">overfitting(과적합) 문제</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Dec 08, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/overfitting/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/101383684-c9979280-38fc-11eb-89a8-d06689c97408.png" alt="overfitting(과적합) 문제" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/WhatsResnet/">VGG? ResNet?</a>
+	</h2>
+	<p class="excerpt">
+	   Introduction
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Dec 06, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/WhatsResnet/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/101280874-0e450000-380f-11eb-960d-b70d27b2908c.png" alt="VGG? ResNet?" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Virtual_Machine/">Flask 시작하기(1) - 가상환경</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">python</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Dec 05, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Virtual_Machine/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Flask 시작하기(1) - 가상환경" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Transfer_Learning/">Transfer Learning</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Dec 01, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Transfer_Learning/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Transfer Learning" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/categorical_cross_entropy/">Cross Entropy의 종류들(sparse cross entropy, binary cross entropy)</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Nov 26, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/categorical_cross_entropy/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Cross Entropy의 종류들(sparse cross entropy, binary cross entropy)" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/entropy/">Entropy와 Cross Entropy</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Nov 25, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/entropy/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Entropy와 Cross Entropy" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/CIFAR10_summary/">딥러닝 - CIFAR-10 모델 구현 by keras(colab)</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Nov 23, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/CIFAR10_summary/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/99202726-7053ac00-27f3-11eb-8ce4-2c3be45146c2.png" alt="딥러닝 - CIFAR-10 모델 구현 by keras(colab)" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/CIFAR10(2)/">딥러닝 용어들에 대한 정리2</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Nov 19, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/CIFAR10(2)/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/99202726-7053ac00-27f3-11eb-8ce4-2c3be45146c2.png" alt="딥러닝 용어들에 대한 정리2" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/CIFAR10/">딥러닝 용어들에 대한 정리</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Nov 16, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/CIFAR10/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/99202726-7053ac00-27f3-11eb-8ce4-2c3be45146c2.png" alt="딥러닝 용어들에 대한 정리" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Attention/">Transformer를 공부하기 위해 얻은 지식들</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#nlp">NLP</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Nov 10, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Attention/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="Transformer를 공부하기 위해 얻은 지식들" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+        <div class="mt-5">
+         <!-- Pagination links -->
+            
+            <ul class="pagination"> 
+              
+                <li class="page-item disabled"><span class="prev page-link">&laquo;</span></li>
+              
+
+              
+                
+                <li class="page-item disabled"><span class="webjeda page-link">1</span></li>
+                
+              
+                
+                <li class="page-item"><a class="page-link" href="/page2">2</a></li>
+                
+              
+                
+                <li class="page-item"><a class="page-link" href="/page3">3</a></li>
+                
+              
+                
+                <li class="page-item"><a class="page-link" href="/page4">4</a></li>
+                
+              
+
+              
+                <li class="page-item"><a class="page-link" href="/page2">Next &raquo;</a></li>
+              
+            </ul>
+                  
+        </div>
+        
+    </div>
+    
+    <div class="col-md-4">
+        <div class="sticky-top sticky-top-offset">
+    <h4 class="font-weight-bold spanborder"><span>Featured</span></h4>  
+    <ol class="list-featured">				
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_2-2/" class="text-dark">2과목: 요약 정리(2) - 제품 소프트웨어 패키징</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_2-1/" class="text-dark">2과목: 요약 정리(1) - 데이터 입출력 구현</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_1-3/" class="text-dark">1과목: 요약 정리(1) - 애플리케이션 설계</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_1-2/" class="text-dark">1과목: 요약 정리(2) - 화면 설계</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_1-1/" class="text-dark">1과목: 요약 정리(1) - 요구사항 확인</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+           
+    </ol>
+</div>     
+    </div>
+    
+</div>
+
+
+
+</div>
+:ET
