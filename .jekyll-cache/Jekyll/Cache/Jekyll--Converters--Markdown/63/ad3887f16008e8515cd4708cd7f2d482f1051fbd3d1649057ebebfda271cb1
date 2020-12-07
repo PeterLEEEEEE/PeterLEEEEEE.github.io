@@ -1,0 +1,44 @@
+I"�<p><br />
+<br /></p>
+
+<h3 id="명령프롬프트cmd에서-실행">명령프롬프트(cmd)에서 실행</h3>
+
+<hr />
+
+<p>mkdir로 디렉토리 하나 만들기
+<br /><br />
+python -m venv myproject 입력 (myproject는 폴더명이니 알아서 선택)
+<br /><br />
+start . 은 해당 폴더 여는 기능</p>
+
+<p>cd myproject 후
+Scripts\activate 입력하면 된다.</p>
+
+<hr />
+
+<h3 id="flask-설치">Flask 설치</h3>
+
+<p>가상환경에 들어오게 되면 앞에 () 표시가 되면 잘 된 것이다.</p>
+
+<p>pip install flask로 플라스크를 설치하자</p>
+
+<hr />
+
+<h3 id="anaconda-환경에서-만드는-법">Anaconda 환경에서 만드는 법</h3>
+
+<p>anaconda prompt 실행</p>
+
+<p>conda create -n my_flask flask
+하면 가상환경이 생기면서 flask도 같이 깔린다.</p>
+
+<p>activate my_flask 하면 가상환경 진입 성공</p>
+
+<ul>
+  <li>conda list 입력하면 설치된 패키지 목록을 볼 수 있음</li>
+</ul>
+
+<hr />
+
+<hr />
+
+:ET

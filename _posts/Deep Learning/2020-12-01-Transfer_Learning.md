@@ -13,9 +13,10 @@ comments: true
 use_math: true
 ---
 
----
+<br>
+<br>
 
-Introduction
+### Introduction
 
 ---
 
@@ -31,17 +32,20 @@ cifar-10에서 직접 만든 모델로 정확도를 측정하였을 때, 80%에 
 
 ---
 
-### Categorical Cross Entropy
+### Transfer Learning의 방법들
 
-Categorical Cross Entropy는 데이터 label이 원-핫 인코딩 방식일 때 사용한다.
-우리가 to_categorical을 죽어라 사용하는 것도 이것 때문일 확률이 높다.
+1. 전체 모델의 구조만 가져와 새롭게 학습하는 방식
+
+2. 모델의 feature extraction 파트는 pre-train된 상태로 가져오되 classifier 단을 목적에 맞게 새롭게 세팅
+
+3. feature extraction의 일부는 freeze하고 나머지를 모두 새롭게 학습, classifier 단 역시 목적에 맞게 세팅
+
+결국 위 세 가지 방식 모두 classifier 단을 본인의 목적에 맞게 세팅을 한다는 공통점이 있고
+
+대체로 2번 방식을 사용한다고 한다. 이유는 다양한 label에 맞춰 학습된 방식이 새롭게 학습을 하는 방식보다 분류를 잘하기 때문이라고 한다. ( + 혹은 본인의 데이터를 통해 weight를 미세 조정하는 추가적 학습을 시키는 방법도 가능하다.)
 
 ---
 
-### Sparse Categorical Cross Entropy
-
-Sparse Categorical Cross Entropy는 반대로 label이 정수일 때 사용한다. 기본적으로 데이터 셋이 제공될 때 label이 정수 형태를 띄고 있는 경우가 많은데 이럴 때 이 loss function을 사용한다.
+###
 
 ---
-
-보완 수정 필요..
