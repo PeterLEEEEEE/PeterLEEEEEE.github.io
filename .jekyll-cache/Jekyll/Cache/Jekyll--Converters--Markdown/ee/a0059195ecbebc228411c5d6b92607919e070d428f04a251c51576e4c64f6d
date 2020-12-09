@@ -1,5 +1,4 @@
-I"�
-<p><br />
+I"<p><br />
 <br /></p>
 
 <h3 id="overfitting-underfitting">overfitting, underfitting</h3>
@@ -49,8 +48,6 @@
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>source: www.brainstobytes.com/test-training-and-validation-sets
 </code></pre></div></div>
 
-<p><br /></p>
-
 <p>주로 <strong>overfitting</strong>이 일어나는 경우는</p>
 
 <ul>
@@ -58,14 +55,23 @@
   <li>훈련 데이터가 적을 때</li>
 </ul>
 
+<p><br /></p>
+
 <p>이기 때문에 학습 중 위와 같은 현상이 발생한다면, 이를 해결하기 위해 아래과 같은 방법들을 고려해볼 수 있다.</p>
 
-<ul>
+<ol>
   <li><strong>Data Augmentation</strong>을 통한 데이터 양을 늘리는 방법</li>
   <li>매개변수를 줄이기 위해 모델의 레이어를 제거하는 방법</li>
-  <li><strong>dropout</strong> 설정을 통한 파라미터의 제거</li>
-  <li>큰 가중치에 대해서 그에 맞는 보정을 주는 <strong>가중치 감소 기법</strong></li>
-</ul>
+  <li>큰 가중치에 대해서 그에 맞는 보정을 주는 <strong>가중치 감소 기법</strong>(*Regularization)</li>
+  <li>
+    <p><strong>dropout</strong> 설정을 통한 파라미터의 제거
+<br />
+<br /></p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>* 모델이 학습된 데이터가 아닌 새로운 데이터에 대해 정확한 예측이 가능하면 이를 일반화(Regularization)되었다고 칭한다.
+</code></pre></div>    </div>
+  </li>
+</ol>
 
 <p><br /></p>
 
