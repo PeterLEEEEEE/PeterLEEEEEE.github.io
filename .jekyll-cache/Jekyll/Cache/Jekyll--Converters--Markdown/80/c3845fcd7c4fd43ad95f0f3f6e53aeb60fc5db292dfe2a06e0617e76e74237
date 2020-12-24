@@ -1,4 +1,4 @@
-I"<p><br />
+I"k<p><br />
 <br /></p>
 
 <h3 id="overfitting-underfitting">overfitting, underfitting</h3>
@@ -9,8 +9,8 @@
 
 <ul>
   <li><strong>이상적 학습</strong>: Low Variance, Low Bias</li>
-  <li>underfitting: Low Variance, High Bias</li>
-  <li>overfitting: High Variance, Low Bias</li>
+  <li>underfitting: Low Variance, High Bias <strong>(High Bias 문제)</strong></li>
+  <li>overfitting: High Variance, Low Bias <strong>(High Variance 문제)</strong></li>
 </ul>
 
 <p><br />

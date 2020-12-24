@@ -1,0 +1,93 @@
+I"�<p><br />
+<br /></p>
+
+<h3 id="overfitting-underfitting">overfitting, underfitting</h3>
+
+<hr />
+
+<p><img src="https://user-images.githubusercontent.com/52132160/101383851-06638980-38fd-11eb-8998-6743ac34f34c.png" alt="image" /></p>
+
+<ul>
+  <li><strong>이상적 학습</strong>: Low Variance, Low Bias</li>
+  <li>underfitting: Low Variance, High Bias <strong>(High Bias 문제)</strong></li>
+  <li>overfitting: High Variance, Low Bias <strong>(High Variance 문제)</strong></li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/103076933-2770ed80-4612-11eb-90e8-0427d490a58c.png" alt="image" /></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>    source: Machine Learning by Andrew Ng (https://www.coursera.org/learn/machine-learning)
+</code></pre></div></div>
+
+<p><br />
+<br /></p>
+
+<h3 id="underfitting-해결법">Underfitting 해결법</h3>
+
+<hr />
+
+<ul>
+  <li>feature를 더 수집한다.</li>
+  <li>Variance가 높은 모델을 사용한다.</li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<h3 id="overfitting-파악-및-해결법">Overfitting 파악 및 해결법</h3>
+
+<hr />
+
+<ul>
+  <li>Training error 보다 test error 눈에 띄게 높을 때 (학습한 데이터는 정확도가 높으나, 새로운 데이터에 대한 정확도가 낮음)</li>
+</ul>
+
+<p>이를 쉽게 알 수 있는 방법은 <strong>Validation Dataset</strong>를 중간 검증용으로 놓는 것이다(최종 검증은 test data에서의 정확도이라 중간 검증이라 표현하였다).</p>
+
+<p>예를 들어 학습 데이터가 100개 존재하면 그 중 20개를 validation data로 잘라놓고 학습에 참여하지 않는다. 이렇게 validation 정확도를 측정하고 train 정확도보다 현저하게 낮다면 이는 overfitting이라 판단할 수 있기에 학습 모델에 <strong>변화</strong>를 주어 이를 낮추어야 한다.
+<br />
+<br /></p>
+
+<p>아래 사진처럼 구분해볼 수 있다.
+<img src="https://www.brainstobytes.com/content/images/2020/01/Sets-1.png" alt="image" /></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>source: www.brainstobytes.com/test-training-and-validation-sets
+</code></pre></div></div>
+
+<p>주로 <strong>overfitting</strong>이 일어나는 경우는</p>
+
+<ul>
+  <li>모델이 매개변수가 많을 때</li>
+  <li>훈련 데이터가 적을 때</li>
+</ul>
+
+<p><br /></p>
+
+<p>이기 때문에 학습 중 위와 같은 현상이 발생한다면, 이를 해결하기 위해 아래과 같은 방법들을 고려해볼 수 있다.</p>
+
+<ol>
+  <li><strong>Data Augmentation</strong>을 통한 데이터 양을 늘리는 방법</li>
+  <li>매개변수를 줄이기 위해 모델의 레이어를 제거하는 방법</li>
+  <li>큰 가중치에 대해서 그에 맞는 보정을 주는 <strong>가중치 감소 기법</strong>(*Regularization)</li>
+  <li>
+    <p><strong>dropout</strong> 설정을 통한 파라미터의 제거
+<br />
+<br /></p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>* 모델이 학습된 데이터가 아닌 새로운 데이터에 대해 정확한 예측이 가능하면 이를 일반화(Regularization)되었다고 칭한다.
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p><br /></p>
+
+<p>여기서 본인의 데이터와 모델을 감안하여 위와 같은 수정을 거친다면 보다 높은 정확도를 가진 모델을 만들어낼 수 있을 것이다.</p>
+
+<p><br />
+<br /></p>
+
+<hr />
+
+:ET

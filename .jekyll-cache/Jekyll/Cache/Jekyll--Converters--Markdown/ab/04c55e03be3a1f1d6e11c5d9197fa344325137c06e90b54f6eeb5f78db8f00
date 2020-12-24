@@ -1,4 +1,4 @@
-I"<p><br />
+I"�<p><br />
 <br /></p>
 
 <h3 id="overfitting-underfitting">overfitting, underfitting</h3>
@@ -9,9 +9,17 @@
 
 <ul>
   <li><strong>이상적 학습</strong>: Low Variance, Low Bias</li>
-  <li>underfitting: Low Variance, High Bias</li>
-  <li>overfitting: High Variance, Low Bias</li>
+  <li>underfitting: Low Variance, High Bias <strong>(High Bias 문제)</strong></li>
+  <li>overfitting: High Variance, Low Bias <strong>(High Variance 문제)</strong></li>
 </ul>
+
+<p><br />
+<br /></p>
+
+<p><img src="https://user-images.githubusercontent.com/52132160/103076933-2770ed80-4612-11eb-90e8-0427d490a58c.png" alt="image" /></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>    source: Machine Learning by Andrew Ng https://www.coursera.org/learn/machine-learning
+</code></pre></div></div>
 
 <p><br />
 <br /></p>
@@ -68,7 +76,7 @@
 <br />
 <br /></p>
 
-    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>\* 모델이 학습된 데이터가 아닌 새로운 데이터에 대해 정확한 예측이 가능하면 이를 일반화(Regularization)되었다고 칭한다.
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="syntax"><code>* 모델이 학습된 데이터가 아닌 새로운 데이터에 대해 정확한 예측이 가능하면 이를 일반화(Regularization)되었다고 칭한다.
 </code></pre></div>    </div>
   </li>
 </ol>

@@ -23,8 +23,15 @@ use_math: true
 ![image](https://user-images.githubusercontent.com/52132160/101383851-06638980-38fd-11eb-8998-6743ac34f34c.png)
 
 - **이상적 학습**: Low Variance, Low Bias
-- underfitting: Low Variance, High Bias
-- overfitting: High Variance, Low Bias
+- underfitting: Low Variance, High Bias **(High Bias 문제)**
+- overfitting: High Variance, Low Bias **(High Variance 문제)**
+
+<br>
+<br>
+
+![image](https://user-images.githubusercontent.com/52132160/103076933-2770ed80-4612-11eb-90e8-0427d490a58c.png)
+
+        source: Machine Learning by Andrew Ng (https://www.coursera.org/learn/machine-learning)
 
 <br>
 <br>
