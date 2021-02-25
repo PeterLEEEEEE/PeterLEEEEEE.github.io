@@ -34,7 +34,7 @@ CIFAR-10은 32x32 픽셀 사이즈의 RGB를 가진 이미지들의 데이터 �
 일단 코드부터 하나씩 천천히 진행하도록 하겠다. 
 </p>
 
-{% highlight python%}
+{% highlight python %}
 
 from keras.datasets import cifar10
 import numpy as np
