@@ -1,4 +1,4 @@
-I"�0<!--
+I"�5<!--
 타이틀 :
 -->
 
@@ -22,7 +22,7 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/kbs_summary_4/">오답노트 (4)</a>
+	<a class="text-dark" href="/CIFAR10(2)/">딥러닝 용어들에 대한 정리2</a>
 	</h2>
 	<p class="excerpt">
 	   
@@ -30,18 +30,18 @@
 	<small class="d-block text-muted">
 		In <span class="catlist">
 		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#한국어능력시험">한국어능력시험</a><span class="sep">, </span>
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
 		
 		</span>
 	</small>
 	<small class="text-muted">
-		Aug 07, 2020
+		Nov 19, 2020
 	</small>
 </div>
 
 	<div class="col-md-3 pr-0 text-right">
-	<a href="/kbs_summary_4/">
-	<img class="w-100" src="/assets/images/2.jpg" alt="오답노트 (4)" />
+	<a href="/CIFAR10(2)/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/99202726-7053ac00-27f3-11eb-8ce4-2c3be45146c2.png" alt="딥러닝 용어들에 대한 정리2" />
 	</a>
 	</div>
 
@@ -52,7 +52,7 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/kbs_summary_3/">오답노트 (3)</a>
+	<a class="text-dark" href="/CIFAR10/">딥러닝 용어들에 대한 정리</a>
 	</h2>
 	<p class="excerpt">
 	   
@@ -60,18 +60,18 @@
 	<small class="d-block text-muted">
 		In <span class="catlist">
 		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#한국어능력시험">한국어능력시험</a><span class="sep">, </span>
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
 		
 		</span>
 	</small>
 	<small class="text-muted">
-		Aug 04, 2020
+		Nov 16, 2020
 	</small>
 </div>
 
 	<div class="col-md-3 pr-0 text-right">
-	<a href="/kbs_summary_3/">
-	<img class="w-100" src="/assets/images/1.jpg" alt="오답노트 (3)" />
+	<a href="/CIFAR10/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/99202726-7053ac00-27f3-11eb-8ce4-2c3be45146c2.png" alt="딥러닝 용어들에 대한 정리" />
 	</a>
 	</div>
 
@@ -82,7 +82,7 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/kbs_summary_2/">오답노트 (2)</a>
+	<a class="text-dark" href="/Attention/">Transformer를 공부하기 위해 얻은 지식들</a>
 	</h2>
 	<p class="excerpt">
 	   
@@ -90,18 +90,18 @@
 	<small class="d-block text-muted">
 		In <span class="catlist">
 		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#한국어능력시험">한국어능력시험</a><span class="sep">, </span>
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#nlp">NLP</a><span class="sep">, </span>
 		
 		</span>
 	</small>
 	<small class="text-muted">
-		Aug 03, 2020
+		Nov 10, 2020
 	</small>
 </div>
 
 	<div class="col-md-3 pr-0 text-right">
-	<a href="/kbs_summary_2/">
-	<img class="w-100" src="/assets/images/3.jpg" alt="오답노트 (2)" />
+	<a href="/Attention/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="Transformer를 공부하기 위해 얻은 지식들" />
 	</a>
 	</div>
 
@@ -112,37 +112,7 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/kbs_summary_1/">오답노트 (1)</a>
-	</h2>
-	<p class="excerpt">
-	   오답
-	</p>
-	<small class="d-block text-muted">
-		In <span class="catlist">
-		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#한국어능력시험">한국어능력시험</a><span class="sep">, </span>
-		
-		</span>
-	</small>
-	<small class="text-muted">
-		Jul 30, 2020
-	</small>
-</div>
-
-	<div class="col-md-3 pr-0 text-right">
-	<a href="/kbs_summary_1/">
-	<img class="w-100" src="https://images.unsplash.com/photo-1528784351875-d797d86873a1?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80" alt="오답노트 (1)" />
-	</a>
-	</div>
-
-</div>
-        
-        
-        
-            <div class="mb-5 d-flex justify-content-between main-loop-card">
-<div class="pr-3">
-	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/Data_Structure_5_graph/">그래프(Graph)</a>
+	<a class="text-dark" href="/Using_python_6/">파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter</a>
 	</h2>
 	<p class="excerpt">
 	   
@@ -150,18 +120,18 @@
 	<small class="d-block text-muted">
 		In <span class="catlist">
 		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#datastructure">DataStructure</a><span class="sep">, </span>
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
 		
 		</span>
 	</small>
 	<small class="text-muted">
-		Jul 30, 2020
+		Sep 03, 2020
 	</small>
 </div>
 
 	<div class="col-md-3 pr-0 text-right">
-	<a href="/Data_Structure_5_graph/">
-	<img class="w-100" src="/assets/images/5.jpg" alt="그래프(Graph)" />
+	<a href="/Using_python_6/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="파이썬에서 유용한 기능 정리(2) - Lambda, Map, Filter" />
 	</a>
 	</div>
 
@@ -172,7 +142,7 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/Data_Structure_4_heap/">우선순위 큐(Priority Queue)와 힙(heap)</a>
+	<a class="text-dark" href="/Using_python_5/">파이썬에서 유용한 기능 정리(1) - enumerate, zip, randint</a>
 	</h2>
 	<p class="excerpt">
 	   
@@ -180,18 +150,18 @@
 	<small class="d-block text-muted">
 		In <span class="catlist">
 		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#datastructure">DataStructure</a><span class="sep">, </span>
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
 		
 		</span>
 	</small>
 	<small class="text-muted">
-		Jul 28, 2020
+		Aug 31, 2020
 	</small>
 </div>
 
 	<div class="col-md-3 pr-0 text-right">
-	<a href="/Data_Structure_4_heap/">
-	<img class="w-100" src="/assets/images/1.jpg" alt="우선순위 큐(Priority Queue)와 힙(heap)" />
+	<a href="/Using_python_5/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701420-3db1f400-ebb2-11ea-8d9e-f11cad524fc0.png" alt="파이썬에서 유용한 기능 정리(1) - enumerate, zip, randint" />
 	</a>
 	</div>
 
@@ -202,7 +172,7 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/Data_Structure_3/">트리</a>
+	<a class="text-dark" href="/DiveintoData_1_MNIST/">월간 데이콘7 - 글자에 숨겨진 숫자 이미지 예측(MNIST)</a>
 	</h2>
 	<p class="excerpt">
 	   
@@ -210,18 +180,18 @@
 	<small class="d-block text-muted">
 		In <span class="catlist">
 		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#datastructure">DataStructure</a><span class="sep">, </span>
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
 		
 		</span>
 	</small>
 	<small class="text-muted">
-		Jul 27, 2020
+		Aug 28, 2020
 	</small>
 </div>
 
 	<div class="col-md-3 pr-0 text-right">
-	<a href="/Data_Structure_3/">
-	<img class="w-100" src="/assets/images/7.jpg" alt="트리" />
+	<a href="/DiveintoData_1_MNIST/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91169688-b88e9100-e712-11ea-9bf5-2e45542d41c6.png" alt="월간 데이콘7 - 글자에 숨겨진 숫자 이미지 예측(MNIST)" />
 	</a>
 	</div>
 
@@ -232,7 +202,7 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/Data_Structure_2/">스택과 큐</a>
+	<a class="text-dark" href="/Using_python_4/">파이썬에서 자주 혼동되는 내용 정리(4) - 파일 입출력</a>
 	</h2>
 	<p class="excerpt">
 	   
@@ -240,18 +210,18 @@
 	<small class="d-block text-muted">
 		In <span class="catlist">
 		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#datastructure">DataStructure</a><span class="sep">, </span>
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
 		
 		</span>
 	</small>
 	<small class="text-muted">
-		Jul 08, 2020
+		Aug 27, 2020
 	</small>
 </div>
 
 	<div class="col-md-3 pr-0 text-right">
-	<a href="/Data_Structure_2/">
-	<img class="w-100" src="/assets/images/14.jpg" alt="스택과 큐" />
+	<a href="/Using_python_4/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91701223-ef9cf080-ebb1-11ea-88c2-7983ceabbb5a.png" alt="파이썬에서 자주 혼동되는 내용 정리(4) - 파일 입출력" />
 	</a>
 	</div>
 
@@ -262,7 +232,7 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/Data_Structure_1/">자료구조</a>
+	<a class="text-dark" href="/Using_python_3/">파이썬에서 자주 혼동되는 내용 정리(3)</a>
 	</h2>
 	<p class="excerpt">
 	   
@@ -270,18 +240,18 @@
 	<small class="d-block text-muted">
 		In <span class="catlist">
 		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#datastructure">DataStructure</a><span class="sep">, </span>
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
 		
 		</span>
 	</small>
 	<small class="text-muted">
-		Jul 08, 2020
+		Aug 26, 2020
 	</small>
 </div>
 
 	<div class="col-md-3 pr-0 text-right">
-	<a href="/Data_Structure_1/">
-	<img class="w-100" src="/assets/images/home.jpg" alt="자료구조" />
+	<a href="/Using_python_3/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91169688-b88e9100-e712-11ea-9bf5-2e45542d41c6.png" alt="파이썬에서 자주 혼동되는 내용 정리(3)" />
 	</a>
 	</div>
 
@@ -292,26 +262,56 @@
             <div class="mb-5 d-flex justify-content-between main-loop-card">
 <div class="pr-3">
 	<h2 class="mb-1 h4 font-weight-bold">
-	<a class="text-dark" href="/Test-Hello-Word/">Hello World!</a>
+	<a class="text-dark" href="/Using_python_2/">파이썬에서 자주 혼동되는 내용 정리(2)</a>
 	</h2>
 	<p class="excerpt">
-	   Hello World
+	   
 	</p>
 	<small class="d-block text-muted">
 		In <span class="catlist">
 		
-		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#test">Test</a><span class="sep">, </span>
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
 		
 		</span>
 	</small>
 	<small class="text-muted">
-		Jul 05, 2020
+		Aug 25, 2020
 	</small>
 </div>
 
 	<div class="col-md-3 pr-0 text-right">
-	<a href="/Test-Hello-Word/">
-	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/86528643-00e4bc00-bee5-11ea-8d93-e60288a53016.jpg" alt="Hello World!" />
+	<a href="/Using_python_2/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91168969-76188480-e711-11ea-8dc7-bbd132814fa8.png" alt="파이썬에서 자주 혼동되는 내용 정리(2)" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Using_python_1/">파이썬에서 자주 혼동되는 내용 정리(1)</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">Python</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Aug 25, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Using_python_1/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/91168615-e246b880-e710-11ea-98cd-8548c0686ef5.png" alt="파이썬에서 자주 혼동되는 내용 정리(1)" />
 	</a>
 	</div>
 
@@ -324,7 +324,7 @@
             
             <ul class="pagination"> 
               
-                <li class="page-item"><a class="page-link" href="/page3">&laquo; Prev</a></li>
+                <li class="page-item"><a class="page-link" href="/">&laquo; Prev</a></li>
               
 
               
@@ -333,7 +333,7 @@
                 
               
                 
-                <li class="page-item"><a class="page-link" href="/page2">2</a></li>
+                <li class="page-item disabled"><span class="webjeda page-link">2</span></li>
                 
               
                 
@@ -341,12 +341,16 @@
                 
               
                 
-                <li class="page-item disabled"><span class="webjeda page-link">4</span></li>
+                <li class="page-item"><a class="page-link" href="/page4">4</a></li>
+                
+              
+                
+                <li class="page-item"><a class="page-link" href="/page5">5</a></li>
                 
               
 
               
-                <li class="page-item disabled"><span class="next page-link">&raquo;</span></li>
+                <li class="page-item"><a class="page-link" href="/page3">Next &raquo;</a></li>
               
             </ul>
                   

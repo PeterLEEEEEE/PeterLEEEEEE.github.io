@@ -1,4 +1,4 @@
-I"�<hr />
+I"�<hr />
 
 <h3 id="cifar-10">CIFAR-10</h3>
 
@@ -23,7 +23,7 @@ CIFAR-10은 32x32 픽셀 사이즈의 RGB를 가진 이미지들의 데이터 �
 일단 코드부터 하나씩 천천히 진행하도록 하겠다. 
 </p>
 
-<p>{% highlight python%}</p>
+<p>{% highlight python %}</p>
 
 <p>from keras.datasets import cifar10
 import numpy as np
