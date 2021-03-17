@@ -1,11 +1,12 @@
 ---
 layout: post
-title: "OS(Operating System) - I/O, polling, Interrupt, DMA"
+title: "OS(Operating System) - System Call"
 categories: [운영체제]
-image: https://user-images.githubusercontent.com/52132160/111351742-d62f4200-86c6-11eb-8583-19c55396d1e9.png
+image: https://user-images.githubusercontent.com/52132160/111424968-d0bd1080-8735-11eb-9e1f-d00f6fe35243.png
 
 tags: [Spring]
 ---
+
 
 ---
 
@@ -85,8 +86,6 @@ port I/O라는 특수한 명령어 제공 <br>
 
 즉 치킨을 주문해놓고 문 앞에서 목빠지게 기다렸던 것이 polling 방식이라면, 치킨이 튀겨지는 동안 은행 등의 다른 볼일을 보다가 치킨 집에서 연락이 오면(인터럽트) 맞춰서 찾아가는 효율적인 방식이라고 생각하면 편할 것 같다.
 <br><br>
-하지만 polling 방식도 높은 처리량을 보이는 I/O에 사용되기에 때로는 polling과 interrupt가 함께 사용되기도 한다.(I/O 발생률이 낮으면 인터럽트, 높으면 폴링 방식으로 전환)
-<br>
 
 CPU는 **IRQ(Interrupt ReQuest) Line**을 가지고 있는데, 하나의 명령어의 실행을 완료할 때마다 항상 이 선을 검사한다. 컨트롤러가 이 라인에 신호를 보내면 CPU는 하던 일을 잠깐 멈추고(경우에 따라 인터럽트를 지연시키기도 한다.) 현재 작업 내용을 Context에 잠깐 저장한 상태로 Interrupt handling을 하게 된다. 처리가 끝나면 context를 다시 불러와 작업을 재개한다.
 <br>
@@ -98,16 +97,15 @@ Polling: 비효율적 <br>
 <br>
 <br>
 
-
 ## DMA(Direct Memory Access)
 
 ---
 
-**고속 장치**에서 들어오는 인터럽트는 CPU에게 부담을 준다. 그래서 부담을 덜어주기 위한 대행자를 만들었는데 그것이 DMA 컨트롤러이다. <br>
+고속 장치에서 들어오는 인터럽트는 CPU에게 부담을 준다. 그래서 부담을 덜어주기 위한 대행자를 만들었는데 그것이 DMA 컨트롤러이다. <br>
 <br>
-역할: 컨트롤러가 장치와 메모리 사이에서 CPU가 개입하지 않고 데이터 전송을 대행해준다.
+역할: 컨트롤러가 장치와 메모리 사이에서 CPU가 개입하지 않고 대행해준다.
 <br>
-만약 DMA 컨트롤러가 없다면 CPU에게 매 바이트마다 인터럽트가 들어올 것이다.(물론 CPU가 직접할 때도 있다)
+만약 DMA 컨트롤러가 없다면 CPU에게 매 바이트마다 인터럽트가 들어올 것이다. 
 
 
 <br>

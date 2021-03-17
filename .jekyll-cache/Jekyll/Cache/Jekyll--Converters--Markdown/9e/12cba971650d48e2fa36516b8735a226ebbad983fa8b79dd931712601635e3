@@ -1,0 +1,685 @@
+I"LL<!--
+타이틀 :
+-->
+
+<div class="container">
+    
+
+    
+    
+    
+<!-- Begin post excerpts, let's highlight the first 4 posts on top -->
+<div class="row remove-site-content-margin">
+    
+    <!-- latest post -->
+    
+    <div class="col-md-6">
+    <div class="card border-0 mb-4 box-shadow">   
+    <a href="/Process/">
+    <div class="topfirstimage" style="background-image: url(https://user-images.githubusercontent.com/52132160/111424968-d0bd1080-8735-11eb-9e1f-d00f6fe35243.png); height: 200px;    background-size: cover;    background-repeat: no-repeat;"></div>     
+    </a>
+    <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+    <h2 class="h4 font-weight-bold">
+    <a class="text-dark" href="/Process/">OS(Operating System) - System Call</a>
+    </h2>
+    <p class="excerpt">
+          공룡책 10판과 수업 내용을 참고로 한 내용 정리이다.  정리 목적 그리고 배우는 입장의 포스팅이기에
+    </p>
+    <div>
+        <small class="d-block text-muted">
+            In <span class="catlist">
+                
+                <a class="text-capitalize text-muted smoothscroll" href="/categories.html#운영체제">운영체제</a><span class="sep">, </span>
+                
+                </span>                   
+        </small>
+        <small class="text-muted">
+            Mar 17, 2021
+        </small>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-md-6">
+        
+        <!-- second latest post --><div class="mb-3 d-flex align-items-center">                
+                
+                <div class="col-md-4">
+                <a href="/Intro-OS(2)/">
+                 <img class="w-100" src="https://user-images.githubusercontent.com/52132160/111351742-d62f4200-86c6-11eb-8583-19c55396d1e9.png" alt="OS(Operating System) - I/O, polling, Interrupt, DMA" />
+                </a>
+                </div>
+                                
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="/Intro-OS(2)/">OS(Operating System) - I/O, polling, Interrupt, DMA</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                        
+                        <a class="text-capitalize text-muted smoothscroll" href="/categories.html#운영체제">운영체제</a><span class="sep">, </span>
+                        
+                        </span>                   
+                    </small>
+                    <small class="text-muted">
+                        Mar 17, 2021
+                    </small>
+                </div>
+            </div>
+        
+        <!-- third latest post --><div class="mb-3 d-flex align-items-center">                
+                
+                <div class="col-md-4">
+                <a href="/Intro-OS/">
+                 <img class="w-100" src="https://user-images.githubusercontent.com/52132160/86528643-00e4bc00-bee5-11ea-8d93-e60288a53016.jpg" alt="OS(Operating System) - Introduction to OS" />
+                </a>
+                </div>
+                                
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="/Intro-OS/">OS(Operating System) - Introduction to OS</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                        
+                        <a class="text-capitalize text-muted smoothscroll" href="/categories.html#운영체제">운영체제</a><span class="sep">, </span>
+                        
+                        </span>                   
+                    </small>
+                    <small class="text-muted">
+                        Mar 16, 2021
+                    </small>
+                </div>
+            </div>
+        
+        <!-- fourth latest post --><div class="mb-3 d-flex align-items-center">                
+                
+                <div class="col-md-4">
+                <a href="/Hello-TOEIC/">
+                <img class="w-100" src="https://user-images.githubusercontent.com/52132160/110297820-35da7d00-8037-11eb-8587-72a120e8382c.png" alt="오늘의 토익(1) part7 오답노트" />
+                </a>
+                </div>
+                                
+                <div>
+                    <h2 class="mb-2 h6 font-weight-bold">
+                    <a class="text-dark" href="/Hello-TOEIC/">오늘의 토익(1) part7 오답노트</a>
+                    </h2>
+                    <small class="d-block text-muted">
+                        In <span class="catlist">
+                        
+                        <a class="text-capitalize text-muted smoothscroll" href="/categories.html#test">Test</a><span class="sep">, </span>
+                        
+                        </span>                   
+                    </small>
+                    <small class="text-muted">
+                        Feb 25, 2021
+                    </small>
+                </div>
+            </div>
+        
+    </div>
+    
+</div>
+    
+<!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<div class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative">
+    <div class="pl-4 pr-0 h-100 tofront">
+        <div class="row justify-content-between">
+            <div class="col-md-6 pt-6 pb-6 pr-lg-4 align-self-center">
+                <h1 class="mb-3">자료구조</h1>
+                <p class="mb-3 lead">
+                    
+                </p>
+                <a href="/Data_Structure_1/" class="btn btn-dark">Read More</a>
+            </div>
+            <div class="col-md-6 d-none d-md-block pr-0" style="background-size:cover;background-image:url(/assets/images/home.jpg);">	
+            </div>
+        </div>
+    </div>
+</div> 
+
+ 
+
+ 
+
+
+
+
+    
+
+
+ <!--endif page url is / -->
+    
+
+
+<!-- Now the rest of the posts with the usual loop but with an offset:4 on the first page so we can skeep the first 4 posts displayed above -->
+    
+<div class="row mt-3">
+   
+    <div class="col-md-8 main-loop">
+        
+        <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+        
+
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Process/">OS(Operating System) - System Call</a>
+	</h2>
+	<p class="excerpt">
+	     공룡책 10판과 수업 내용을 참고로 한 내용 정리이다.  정리 목적 그리고 배우는 입장의 포스팅이기에
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#운영체제">운영체제</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Mar 17, 2021
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Process/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/111424968-d0bd1080-8735-11eb-9e1f-d00f6fe35243.png" alt="OS(Operating System) - System Call" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Intro-OS(2)/">OS(Operating System) - I/O, polling, Interrupt, DMA</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#운영체제">운영체제</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Mar 17, 2021
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Intro-OS(2)/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/111351742-d62f4200-86c6-11eb-8583-19c55396d1e9.png" alt="OS(Operating System) - I/O, polling, Interrupt, DMA" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Intro-OS/">OS(Operating System) - Introduction to OS</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#운영체제">운영체제</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Mar 16, 2021
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Intro-OS/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/86528643-00e4bc00-bee5-11ea-8d93-e60288a53016.jpg" alt="OS(Operating System) - Introduction to OS" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Hello-TOEIC/">오늘의 토익(1) part7 오답노트</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#test">Test</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Feb 25, 2021
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Hello-TOEIC/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/110297820-35da7d00-8037-11eb-8587-72a120e8382c.png" alt="오늘의 토익(1) part7 오답노트" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Hello-TOEIC-copy/">오늘의 토익(1) part5,6 오답노트</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#test">Test</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Feb 25, 2021
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Hello-TOEIC-copy/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/86528643-00e4bc00-bee5-11ea-8d93-e60288a53016.jpg" alt="오늘의 토익(1) part5,6 오답노트" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Prologue/">욕설 필터링(1) - Introduction</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#project">project</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Feb 25, 2021
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Prologue/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/86528643-00e4bc00-bee5-11ea-8d93-e60288a53016.jpg" alt="욕설 필터링(1) - Introduction" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Usingmap/">Map을 통한 List 저장</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">python</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Dec 29, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Usingmap/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Map을 통한 List 저장" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/overfitting/">overfitting(과적합) 문제</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Dec 08, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/overfitting/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/101383684-c9979280-38fc-11eb-89a8-d06689c97408.png" alt="overfitting(과적합) 문제" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/WhatsResnet/">VGG? ResNet?</a>
+	</h2>
+	<p class="excerpt">
+	   Introduction
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#deep learning">Deep Learning</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Dec 06, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/WhatsResnet/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/101280874-0e450000-380f-11eb-960d-b70d27b2908c.png" alt="VGG? ResNet?" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+            <div class="mb-5 d-flex justify-content-between main-loop-card">
+<div class="pr-3">
+	<h2 class="mb-1 h4 font-weight-bold">
+	<a class="text-dark" href="/Virtual_Machine/">Flask 시작하기(1) - 가상환경</a>
+	</h2>
+	<p class="excerpt">
+	   
+	</p>
+	<small class="d-block text-muted">
+		In <span class="catlist">
+		
+		<a class="text-capitalize text-muted smoothscroll" href="/categories.html#python">python</a><span class="sep">, </span>
+		
+		</span>
+	</small>
+	<small class="text-muted">
+		Dec 05, 2020
+	</small>
+</div>
+
+	<div class="col-md-3 pr-0 text-right">
+	<a href="/Virtual_Machine/">
+	<img class="w-100" src="https://user-images.githubusercontent.com/52132160/100248630-0ec3d800-2f7f-11eb-9cc3-db0f10ae26eb.png" alt="Flask 시작하기(1) - 가상환경" />
+	</a>
+	</div>
+
+</div>
+        
+        
+        
+        <div class="mt-5">
+         <!-- Pagination links -->
+            
+            <ul class="pagination"> 
+              
+                <li class="page-item disabled"><span class="prev page-link">&laquo;</span></li>
+              
+
+              
+                
+                <li class="page-item disabled"><span class="webjeda page-link">1</span></li>
+                
+              
+                
+                <li class="page-item"><a class="page-link" href="/page2">2</a></li>
+                
+              
+                
+                <li class="page-item"><a class="page-link" href="/page3">3</a></li>
+                
+              
+                
+                <li class="page-item"><a class="page-link" href="/page4">4</a></li>
+                
+              
+                
+                <li class="page-item"><a class="page-link" href="/page5">5</a></li>
+                
+              
+
+              
+                <li class="page-item"><a class="page-link" href="/page2">Next &raquo;</a></li>
+              
+            </ul>
+                  
+        </div>
+        
+    </div>
+    
+    <div class="col-md-4">
+        <div class="sticky-top sticky-top-offset">
+    <h4 class="font-weight-bold spanborder"><span>Featured</span></h4>  
+    <ol class="list-featured">				
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_2-2/" class="text-dark">2과목: 요약 정리(2) - 제품 소프트웨어 패키징</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_2-1/" class="text-dark">2과목: 요약 정리(1) - 데이터 입출력 구현</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_1-3/" class="text-dark">1과목: 요약 정리(1) - 애플리케이션 설계</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_1-2/" class="text-dark">1과목: 요약 정리(2) - 화면 설계</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+                        
+            <li class="mb-4">
+            <span>
+                <h6 class="font-weight-bold">
+                    <a href="/EIP_1-1/" class="text-dark">1과목: 요약 정리(1) - 요구사항 확인</a>
+                </h6>
+                <span class="d-block text-muted">
+                    In <span class="catlist">
+                    
+                    <a class="text-capitalize text-muted smoothscroll" href="/categories.html#정보처리기사">정보처리기사</a><span class="sep">, </span>
+                    
+                    </span>
+                </span>
+            </span>
+            </li>                
+           
+    </ol>
+</div>     
+    </div>
+    
+</div>
+
+
+
+</div>
+:ET
