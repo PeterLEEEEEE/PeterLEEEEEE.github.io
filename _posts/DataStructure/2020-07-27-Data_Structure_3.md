@@ -32,7 +32,7 @@ use_math: true
     - 루트(root) 노드: 트리의 첫 번째 노드(2번 노드에 해당)
     - 단말(leap or terminal) 노드: 자식이 없는 노드(5, 11, 4번 노드가 해당)
     - 내부(internal) 노드: 적어도 하나의 자식을 가지는 노드(단말 노드가 아닌 노드)
-    - 트리의 높이(height): 루트 노드에서 가장 먼 거리에 있는 자식 노드에 이르는 간선들의 수
+    - 트리의 높이(height): 루트 노드에서 가장 먼 거리에 있는 자식 노드에 이르는 간선들의 수 + 1
     - 차수(degree): 한 노드가 가지는 자식 노드의 개수
 
 ![300px-Binary_tree svg](https://user-images.githubusercontent.com/52132160/88499076-d5df1b00-cfff-11ea-820d-f2930155a4a8.png)
