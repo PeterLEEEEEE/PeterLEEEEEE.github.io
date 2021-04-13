@@ -1,0 +1,215 @@
+I"� <hr />
+
+<ul>
+  <li>공룡책 10판(Operating System Concepts 10th)과 수업 내용을 참고로 한 내용 정리이다.</li>
+  <li>정리 목적 그리고 배우는 입장의 포스팅이기에 잘못된 내용이 있을 수 있다.
+<br /></li>
+</ul>
+
+<hr />
+
+<p><br /><br /></p>
+
+<h2 id="fcfsfirst-come-first-served-fifo">FCFS(First-Come, First-Served), FIFO</h2>
+
+<hr />
+
+<ul>
+  <li><strong>Non-preemptive</strong> 즉 비선점형 스케줄링 알고리즘이다.</li>
+  <li><strong>NO starvation:</strong> 프로세스가 시스템에 <strong>들어온 순서대로 처리</strong>하기 때문에 계속 우선순위가 밀려 자원을 할당 받지 못하는 현상은 없다.
+<br /><br /></li>
+</ul>
+
+<p><strong>문제점</strong><br /></p>
+
+<ul>
+  <li>자원을 할당받기 위한 <strong>평균 대기 시간</strong>이 상당히 길어질 수 있다.</li>
+  <li>I/O와 CPU의 overlap이 좋지 못하다.(주로 CPU 자원을 많이 사용하는데 둘을 동시에 사용하는 것이 가장 효율적)</li>
+  <li>
+    <p><strong>Convoy effect:</strong> 들어온 순서대로 처리하다보니 긴 프로세스가 앞에 있을 경우 뒤따르는 작은 프로세스들에게 긴 대기시간을 주는 비효율적인 상황이 발생한다.</p>
+
+    <p><br />
+<br /></p>
+  </li>
+</ul>
+
+<h2 id="sjfshortest-job-first">SJF(Shortest Job First)</h2>
+
+<hr />
+
+<p>짧은 CPU burst를 가진 가장 작은 프로세스부터 처리하는 것이다.</p>
+
+<ul>
+  <li><strong>Non-preemtive:</strong> FCFS와 마찬가지로 비선점형 방식이다.
+<br /><br /></li>
+</ul>
+
+<p><strong>문제점</strong> <br /></p>
+
+<ul>
+  <li><strong>Starvation</strong> <br />
+짧은 작업의 프로세스를 우선적으로 처리하다보니 긴 작업의 프로세스는 계속해서 서비스를 받지 못하게 되는 현상이 일어난다.</li>
+</ul>
+
+<p><br /><br /></p>
+
+<h2 id="srtshortest-remaining-time-first-sjf의-preemptive-버전">SRT(Shortest Remaining Time First), SJF의 preemptive 버전</h2>
+
+<hr />
+
+<p>새로운 프로세스가 들어왔을 때, 만약 기존에 처리 중이던 프로세스의 잔량 시간보다 더 짧은 CPU burst를 요구할 경우 선점하여 새로운 프로세스에게 CPU 자원을 할당하는 방식이다.
+<br /><br /></p>
+
+<h2 id="rrround-robin">RR(Round Robin)</h2>
+
+<hr />
+
+<p>Time sharing, preemptive한 방식이다.</p>
+
+<p>RR 방식은 프로세스의 요구 자원의 크기와 관계없이 설정된 Time Quantum 만큼 CPU 자원을 할당하고 시간이 충족되면 큐의 가장 뒤로 보내고 다음 프로세스에게 자원을 할당하는 방식이다.
+<br /></p>
+
+<ul>
+  <li>
+    <p><strong>No starvation:</strong> 우선순위가 없고 항상 프로세스를 항상 균등하게 자원 배분을 해주기 때문에 기아 현상이 발생하지 않는다.</p>
+  </li>
+  <li>
+    <p><strong>Turnaround time의 증가:</strong> waiting time이 늘어나게 되면서 turnaround time이 증가하는 경향을 보인다. Turnaround time = CPU burst + Waiting time</p>
+  </li>
+  <li>
+    <p><strong>Response time의 감소:</strong> SJF에 비해 평균적으로 높은 turnaround time 하지만 Response time은 빠르다. 이는 차별없이 균등하게 time quantum을 배분하기 때문이다.
+<br /></p>
+  </li>
+</ul>
+
+<p>RR 방식에서의 중요한 부분은 Time Quantum의 길이에 따라 context switching 횟수가 변하여 오버헤드에 영향을 미치기 때문에 이를 잘 조절하는 것이 중요하다.(Time quantum이 길다 = turnaround time 감소 = overhead 감소)</p>
+
+<p><strong>공평성 제공</strong> <br />
+같은 우선순위의 프로세스들에게 CPU 자원을 공평하게 제공하도록 한다.
+<br /></p>
+
+<p><strong>균형성</strong> <br />
+CPU와 I/O가 균형되게 사용될 수 있도록 하는 것이다. 이는 병행이 가능하므로 최대한 같이 돌아가면 자원을 효율적으로 쓰게 된다.
+<br /></p>
+
+<p>위 3가지는 모든 시스템에 공통적으로 적용되는 목표이다.</p>
+
+<p><br /><br /></p>
+
+<p><strong>Batch System에서의 목표</strong></p>
+
+<ul>
+  <li>
+    <p>Throughput(처리량): Batch System은 사용자와의 상호작용이 없는(천공 카드 방식) 방식이다 보니 정해진 단위 시간에 최대한 많은 작업을 처리하도록 한다.
+(maximum is the best)
+<br /></p>
+  </li>
+  <li>
+    <p>Turnaround Time: 작업전체시간(총처리시간), 어떤 작업이 시스템에 들어온 시각부터 시작돼서 종료되어 나가기까지 걸리는 총 시간이 짧도록 하는 것(프로세스 대기 시간도 여기 포함된다.)</p>
+  </li>
+  <li>
+    <p>CPU 활용: 컴퓨팅 자원을 최대한 비지 않게 사용(Batch system 사용 당시에는 컴퓨팅 자원이 매우 비쌌다.)</p>
+  </li>
+</ul>
+
+<p><br /><br /></p>
+
+<p><strong>Interactive systems에서의 목표</strong><br /></p>
+
+<ul>
+  <li>
+    <p>Responsive time: 사용자의 요구에 빨리 반응하는 시간, 어떤 요청이 시스템에 전달되고 처음으로 시스템이 반응하기까지 걸리는 시간이라고 생각하자.</p>
+  </li>
+  <li>
+    <p>Proportionality: 비례라는 뜻이지만 여기서는 사용자의 기대(예상)에 최대한 유사하게 대응하는 것을 뜻한다.</p>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p>여기까지가 우리가 통상적으로 말하는 스케줄링 알고리즘의 목표라고 할 수 있다.</p>
+
+<p><br /></p>
+
+<p><strong>Real time system에서의 목표</strong><br /></p>
+
+<ul>
+  <li>
+    <p>Deadline: 시간을 엄수해야 하는 특징이 있다.
+<br /></p>
+  </li>
+  <li>
+    <p>Predictability: 예측성, Real-time의 예시로 최근 사람들이 애용하는 넷플릭스를 들 수 있는데, 만약 네트워크가 좋지 못해 동영상이 자주 끊기면 사용자는 불만을 느낄 것이다. 이를 막기 위해 네트워크의 상태를 모니터링해 미리 데이터를 버퍼링해 놓는 것도 일종의 예측성이라 할 수 있다.</p>
+
+    <p><br />
+<br /></p>
+  </li>
+</ul>
+
+<h2 id="스케줄링의-종류">스케줄링의 종류</h2>
+
+<hr />
+
+<p><strong>Non-preemptive scheduling(비선점형 스케줄링)</strong><br /></p>
+
+<ul>
+  <li>
+    <p>한 프로세스가 CPU를 할당받으면 작업이 종료될 때까지 CPU 자원을 뺏을 수 없는 방식의 스케줄링을 말한다. (선점 = 뺏을 수 있는, 비선점 = 뺏을 수 없는)</p>
+  </li>
+  <li>
+    <p>모든 프로세스가 협력적으로 작동하고 Yield() system call로 CPU 자원을 넘겨주게 된다. 즉 스케줄러는 프로세스가 CPU를 양보할 때까지 기다리게 된다.</p>
+  </li>
+</ul>
+
+<p><br /></p>
+
+<p><strong>preemptive scheduling(선점형 스케줄링)</strong><br /></p>
+
+<ul>
+  <li>
+    <p>프로세스가 CPU 자원을 가지고 실행되고 있을 때 그걸 OS가 뺏어 우선순위가 높은 다른 프로세스에게 CPU 자원을 넘겨주는 방식이다.</p>
+  </li>
+  <li>
+    <p>스케줄러가 interrupt를 통해 강제로 context switching을 일으킨다.(중요한 CPU의 레지스터 정보를 프로세스의 PCB에 저장하고 새롭게 running시킬 프로세스를 PCB에서 로드한다.)</p>
+  </li>
+  <li>
+    <p>만일 어떤 프로세스가 shared data(공유 데이터)를 업데이트하는 도중에 CPU 자원을 가져가면 미완성으로 끝나게 된다.</p>
+  </li>
+</ul>
+
+<p><br /><br /></p>
+
+<h2 id="요약좋은-스케줄링의-기준">요약(좋은 스케줄링의 기준)</h2>
+
+<hr />
+
+<ul>
+  <li>
+    <p><strong>CPU utilization(max):</strong> CPU를 얼마나 잘 활용했는지</p>
+  </li>
+  <li>
+    <p><strong>Throughput(max):</strong> 단위시간 당 종료하는 프로세스의 개수(실행되는 프로세스의 개수가 정확하지만 OS가 알기 힘들다)</p>
+  </li>
+  <li>
+    <p><strong>Turnaround time(min):</strong> 어떤 프로세스를 실행하는데 걸리는 시간(실행시간 + 대기 시간)</p>
+  </li>
+  <li>
+    <p><strong>Waiting time(min):</strong> 위의 대기 시간과 동일(ready queue + waiting queue에서 대기하는 시간)</p>
+  </li>
+  <li>
+    <p><strong>Response time(min):</strong> 응답시간, 시스템에 요청이 들어온 시간부터 첫 번째 응답이 발생하기까지의 시간</p>
+  </li>
+</ul>
+
+<p><br />
+<br /></p>
+
+<hr />
+
+<p>다음 글에서는 스케줄링 알고리즘의 종류를 알아보도록 하겠다.
+<br />
+<br /></p>
+
+<hr />
+
+:ET

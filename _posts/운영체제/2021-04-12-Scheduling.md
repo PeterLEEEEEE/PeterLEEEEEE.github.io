@@ -2,7 +2,7 @@
 layout: post
 title: "OS(Operating System) - Scheduling(스케줄링)"
 categories: [운영체제]
-image: https://user-images.githubusercontent.com/52132160/111424968-d0bd1080-8735-11eb-9e1f-d00f6fe35243.png
+image: https://user-images.githubusercontent.com/52132160/114525853-68ecdd80-9c81-11eb-961a-2415b2ce0d17.png
 
 tags: [Spring]
 ---
