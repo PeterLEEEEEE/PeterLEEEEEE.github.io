@@ -1,0 +1,50 @@
+I"<hr />
+
+<h5 id="이진탐색-트리py">이진탐색 트리.py</h5>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c1"># BST
+</span>
+<span class="k">class</span> <span class="nc">Node</span><span class="p">:</span>
+    <span class="k">def</span> <span class="err">**</span><span class="nf">init</span><span class="o">**</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">left</span> <span class="o">=</span> <span class="bp">None</span><span class="p">,</span> <span class="n">right</span> <span class="o">=</span> <span class="bp">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">left</span> <span class="o">=</span> <span class="n">left</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">right</span> <span class="o">=</span> <span class="n">right</span>
+
+<span class="k">class</span> <span class="nc">Tree</span><span class="p">:</span>
+    <span class="k">def</span> <span class="err">**</span><span class="nf">init</span><span class="o">**</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span> <span class="o">=</span> <span class="bp">None</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">root</span> <span class="o">=</span> <span class="n">root</span>
+
+    <span class="k">def</span> <span class="nf">insert</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">root</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">insert_val</span><span class="p">(</span><span class="bp">self</span><span class="p">.</span><span class="n">root</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">insert_val</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">node</span><span class="p">,</span> <span class="n">data</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
+           <span class="n">node</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+           <span class="k">print</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">data</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">node</span><span class="p">.</span><span class="n">data</span> <span class="o">&gt;=</span> <span class="n">data</span><span class="p">:</span>
+                <span class="n">node</span><span class="p">.</span><span class="n">left</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">insert_val</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">left</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">node</span><span class="p">.</span><span class="n">right</span> <span class="o">=</span> <span class="bp">self</span><span class="p">.</span><span class="n">insert_val</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">right</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">node</span>
+
+<span class="k">if</span> <span class="o">**</span><span class="n">name__</span> <span class="o">==</span> <span class="s">"**main**"</span><span class="p">:</span> 
+    
+    <span class="c1"># root = [int(x) for x in input().split()] # print(root) 직접 입력
+</span>
+    <span class="n">root</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">11</span><span class="p">]</span>
+
+    <span class="n">tree</span> <span class="o">=</span> <span class="n">Tree</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">root</span><span class="p">:</span>
+        <span class="n">tree</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">data</span><span class="p">)</span></code></pre></figure>
+
+<hr />
+
+<p>참고: <a href="https://geonlee.tistory.com/72">파이썬을 이용해서 이진 탐색 트리 구현하기</a></p>
+
+<p>사실 너무 괜찮은 코드라 거의 그대로 가져옴..</p>
+
+<hr />
+:ET
